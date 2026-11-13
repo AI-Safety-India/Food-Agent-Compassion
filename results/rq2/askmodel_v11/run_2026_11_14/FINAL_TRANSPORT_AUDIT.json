@@ -1,0 +1,140 @@
+{
+  "auditor": "prefix_reviewer_b_independent_transport_audit",
+  "status": "passed",
+  "export_sha256": "83e8f25236ac68740e662d47615a1ce44f0a9ea8bf66b32bbe8e6ed86ace9ef3",
+  "manifest_sha256": "f5d8cfc9e60fb5cd6b2ca02ebe68ec1613c0b6ab4c2e0d5297fc48dc74178209",
+  "runner_sha256": "8d5a1b54c5418604a960869a77057ac17b572f2a39d396dee931ac44232235eb",
+  "job_count": 1066,
+  "ledger_events": 2132,
+  "intents": 1066,
+  "completions": 1066,
+  "unique_requests": 1066,
+  "unique_backend_requests": 1066,
+  "completion_counts": {
+    "complete": 1054,
+    "malformed_or_ambiguous": 9,
+    "token_limit_truncated": 3
+  },
+  "checks": [
+    "Exact manifest job coverage",
+    "One sequential intent/completion pair per job; no duplicates or pending jobs",
+    "Every raw response byte hash matches completion ledger",
+    "Every input_hash equals canonical JSON SHA256 of returned prompt token IDs and both ledger entries",
+    "Every completion flag independently reproduced from structural runner rules",
+    "Final summary and final progress log match responses; worker status complete",
+    "Frozen runner, manifest, engine, sampler, stop IDs and model revision match",
+    "Pinned dependency versions, bf16, no quantization, hardware and auto attention evidence recorded",
+    "Environment and identity unchanged from first export"
+  ],
+  "environment": {
+    "cuda_version": "13.0",
+    "hardware": [
+      {
+        "capability": [
+          12,
+          0
+        ],
+        "index": 0,
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_memory": 101975851008
+      }
+    ],
+    "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "platform": "linux",
+    "python": "3.13.11 (main, Feb  3 2026, 03:08:54) [GCC 14.2.0]",
+    "ready_before_study_dispatch": true,
+    "requested_engine": {
+      "disable_log_stats": true,
+      "dtype": "bfloat16",
+      "enable_prefix_caching": false,
+      "enforce_eager": true,
+      "generation_config": "vllm",
+      "gpu_memory_utilization": 0.5,
+      "limit_mm_per_prompt": {
+        "image": 0,
+        "video": 0
+      },
+      "max_model_len": 6710,
+      "max_num_seqs": 1,
+      "quantization": null,
+      "seed": 20261114,
+      "tensor_parallel_size": 1
+    },
+    "resolved": {
+      "attention": {
+        "actual_backend_evidence": "Retain worker startup log; config is not a claim of selected backend.",
+        "config": {
+          "backend": null,
+          "disable_flashinfer_q_quantization": false,
+          "flash_attn_max_num_splits_for_cuda_graph": 32,
+          "flash_attn_version": null,
+          "flex_attn_block_m": null,
+          "flex_attn_block_n": null,
+          "flex_attn_kv_block_size": null,
+          "flex_attn_q_block_size": null,
+          "indexer_kv_dtype": "bf16",
+          "mla_prefill_backend": null,
+          "tq_max_kv_splits_for_cuda_graph": 32,
+          "use_fp4_indexer_cache": false,
+          "use_non_causal": false,
+          "use_prefill_decode_attention": false,
+          "use_prefill_query_quantization": false,
+          "use_trtllm_attention": null
+        },
+        "selection_policy": "vllm_automatic"
+      },
+      "cache": {
+        "enable_prefix_caching": false,
+        "gpu_memory_utilization": 0.5
+      },
+      "model": {
+        "dtype": "torch.bfloat16",
+        "enforce_eager": "True",
+        "max_model_len": "6710",
+        "model": "/home/marimo/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "seed": "20261114",
+        "tokenizer": "/home/marimo/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+      },
+      "parallel": {
+        "tensor_parallel_size": 1
+      },
+      "quantization": null,
+      "sampling": {
+        "frequency_penalty": 0.0,
+        "ignore_eos": false,
+        "max_tokens": 256,
+        "min_p": 0.0,
+        "min_tokens": 0,
+        "n": 1,
+        "presence_penalty": 0.0,
+        "repetition_penalty": 1.0,
+        "seed": 20261114,
+        "stop_token_ids": [
+          248046
+        ],
+        "temperature": 0.0,
+        "top_k": 0,
+        "top_p": 1.0
+      },
+      "scheduler": {
+        "max_num_seqs": 1
+      }
+    },
+    "sampler": {
+      "VLLM_USE_FLASHINFER_SAMPLER": "0",
+      "name": "pytorch_native"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "torch": "2.11.0",
+      "transformers": "5.14.1",
+      "vllm": "0.24.0"
+    }
+  },
+  "notes": [
+    "Resolved greedy top_k=0 is vLLM normalization of requested -1.",
+    "Initial worker.log import failure preceded study dispatch; successful worker_v2.log has no traceback.",
+    "Transport audit does not independently possess remote model shards or prepared gzip; their hashes are frozen in manifest and verified by frozen runner before dispatch. Returned token IDs and all ledger/input hashes independently checked here.",
+    "No semantic rates or new model execution."
+  ]
+}

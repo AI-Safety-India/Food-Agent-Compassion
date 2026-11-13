@@ -1,0 +1,49 @@
+{
+  "annotations": 1066,
+  "adjudications": 5,
+  "final_annotations_sha256": "93b0abad8787d2e2a0daa1ccb3a6f31c742371cdb4edca71b12f3c50bd8aec3c",
+  "sources": [
+    {
+      "path": "results\\rq2\\askmodel_v11\\run_2026_11_14\\annotations\\reviewer_a.jsonl",
+      "sha256": "eec8bc79b27ddbdc95f4464ede12f94c577c4d67292bf4dfc8d16ca447198647"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\run_2026_11_14\\annotations\\reviewer_b.jsonl",
+      "sha256": "a2fa8d65a9bff8a9d27224d952b785f53fe2032e95ca17e8e39ef109c3c1caa0"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\run_2026_11_14\\annotations\\reviewer_c.jsonl",
+      "sha256": "fdf9327e23d9788044b9a1aa0baff1040dabc426d20b54bf0fbd6eb025253a80"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\run_2026_11_14\\annotations\\reviewer_root.jsonl",
+      "sha256": "fd1f74ff4242f7e412a51c10f3117ce1969c14a15b4f8ab83966c7998fb404e8"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\run_2026_11_14\\annotations\\root_adjudications.jsonl",
+      "sha256": "537567811a92ae47a3379eaab70371e179286bad63325251086f9a51e5838fef"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\run_2026_11_14\\export_08.json.gz",
+      "sha256": "83e8f25236ac68740e662d47615a1ce44f0a9ea8bf66b32bbe8e6ed86ace9ef3"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\run_2026_11_14\\original_history_linkage.json",
+      "sha256": "8e88eb28b309bce80b1660675be7a50daadf8b233c847481f4a1733079679888"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\code\\analyze_capacity.py",
+      "sha256": "e68e41dc0c6e140574e1610c4cc78c1c039f31056df395a2e64b08d496623981"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\code\\capacity_scoring.py",
+      "sha256": "6adf05df25113893093018e913d1aa1938f90f7c28f2ceea58c79f24939b0faa"
+    },
+    {
+      "path": "results\\rq2\\askmodel_v11\\code\\original_run_join.py",
+      "sha256": "2e4f38b754868c33a5c2b09ba208eb3561f7c505ee8016e0a53cfaf3e33c641d"
+    }
+  ],
+  "review": "Delegated model review plus documented parent consistency adjudication; not human annotation or a full independent double review.",
+  "aggregate_results_calculated": false
+}
