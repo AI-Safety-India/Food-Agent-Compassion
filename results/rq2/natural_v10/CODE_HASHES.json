@@ -1,0 +1,34 @@
+{
+  "stage": "A: input preparation and blinded review only",
+  "freeze_date": "2026-11-13",
+  "files": [
+    {
+      "path": "code/feasibility_kernel.py",
+      "sha256": "7781231852e0b90003f514624a6dab1a157d583ae0c4fa9e9ecccec28d9869eb"
+    },
+    {
+      "path": "code/input_adapter.py",
+      "sha256": "46cfb0c0ce357f16cbdef8fadf4458f9055a5cb7cddc5090bfebae4342d2bc42"
+    },
+    {
+      "path": "code/run_stage_a.py",
+      "sha256": "8c00241c93b8e099ef8e77dd4efb7f8ef79ab5bc7b2d69b2c91d45efc6e164be"
+    },
+    {
+      "path": "code/test_feasibility_kernel.py",
+      "sha256": "0ff498ed21c7100016324ab63bf23d61b56fca6f4b5628d1a51b582d4ccd943f"
+    },
+    {
+      "path": "code/test_input_adapter.py",
+      "sha256": "470080f53d39bbbcea815df12ac568b311798042313e5f15bd1e886b3da7cb26"
+    },
+    {
+      "path": "code/test_run_stage_a.py",
+      "sha256": "f9ab604bb891e001eda8eaac6495a9df15c79cbfae4f424c90a8053d54364559"
+    },
+    {
+      "path": "design_review/PREFIX_REVIEW_RUBRIC.md",
+      "sha256": "2890249ddaef2c75876eb1bb685f07776e3e5625d86a98c80f074319a926d192"
+    }
+  ]
+}

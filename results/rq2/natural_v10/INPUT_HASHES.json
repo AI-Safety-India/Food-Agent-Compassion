@@ -1,0 +1,100 @@
+{
+  "purpose": "Input identity recorded before feasibility; no content or outcome analysis",
+  "inputs": [
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\AGENT_PIPELINE_PROMPT_2026-11-12.md",
+      "bytes": 25552,
+      "sha256": "438b512f1ddd5ca2c0903121f80c60b10dbc0d38ac132bcacff8b9ad71dc74f7"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\AGENTS.md",
+      "bytes": 846,
+      "sha256": "ca26026edbfd0adfaf45f28c5c193b3e8d85c2b1c591971ce76ea78a83831c7d"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\tuning_scenarios.json",
+      "bytes": 1052,
+      "sha256": "9ff037b0b3e77e5cb7f8a2224c4e2a0e212b394fa445d71cccce9cd23a5eff4e"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\qwen35_rq1_scores_1200.csv",
+      "bytes": 362690,
+      "sha256": "c53eee1d9b71ad4a114ae133eff1612e8d108624bdfea7b5e5d85b2404e700c8"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\repair_v2\\inputs\\t2\\qwen35_positions_1200.jsonl",
+      "bytes": 1977466,
+      "sha256": "4c41357ae4586e58faeab0f2dca9f31ed3c3b50a5cc169f11d41b35142f653d0"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\repair_v2\\inputs\\benchmark_probe_scores_1200.csv",
+      "bytes": 2111473,
+      "sha256": "35ee63a73f21d878a9170f605b575670d4d8dbc7c0259c72c74058358b8b581b"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\repair_v2\\repair_audit.json",
+      "bytes": 155366,
+      "sha256": "85ab8ddfd0c0a64d1201935d3a8a2d75da382e6aa3d506e9cc14cd9740870586"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\rq2_repair\\rq2_targeted_repair_v1.zip",
+      "bytes": 21655048,
+      "sha256": "c0666b9bebc01ea0b40effdc1308f8eb32e3dc70876380c3d72a2201143552f0"
+    },
+    {
+      "path": "C:\\Users\\Person1\\Downloads\\rq2_all_runs_cpu_audit.json.gz",
+      "bytes": 85800,
+      "sha256": "557fedefb50213bcc9555c1269f2c0dfdf660467760174caedcc0e81056224bb"
+    },
+    {
+      "path": "C:\\Users\\Person1\\Downloads\\rq2_cache_01.zip",
+      "bytes": 208863559,
+      "sha256": "e5781283bfe645fdc8dceb3c8a71b3f72c21b6ae596be4128471a66ef77b38df"
+    },
+    {
+      "path": "C:\\Users\\Person1\\Downloads\\rq2_cache_02.zip",
+      "bytes": 201394581,
+      "sha256": "14e8a37ce0cd991f307938a758653c115cbd2cfab4342b81de7ffecc4b112fde"
+    },
+    {
+      "path": "C:\\Users\\Person1\\Downloads\\rq2_cache_03.zip",
+      "bytes": 210685776,
+      "sha256": "a69548daa2f8e9ed9605f298fe0cfb33754719f199556a75ecd503a16bd6bf11"
+    },
+    {
+      "path": "C:\\Users\\Person1\\Downloads\\rq2_cache_04.zip",
+      "bytes": 207255062,
+      "sha256": "448dd1c04cf321cd2aeaa28dc3ddc26c73ce811a355364e84823b082b2746c02"
+    },
+    {
+      "path": "C:\\Users\\Person1\\Downloads\\rq2_cache_05.zip",
+      "bytes": 200385112,
+      "sha256": "2faff1c19f82de78cfc0c1d12351a61e1612167db8d8ccb2a3035081e3715950"
+    },
+    {
+      "path": "C:\\Users\\Person1\\Downloads\\rq2_cache_06.zip",
+      "bytes": 195144643,
+      "sha256": "425f6cfe5aae41acb1b7bb07eb8e81da77d9eb93091e83165d14dbf0adbede71"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\logs\\full\\qwen3.5-9b\\ethical\\2026-10-25T11-29-23-00-00_menu-planning-welfare_YLP6R4gZGsmPfoo97bCR4U.eval",
+      "bytes": 9187544,
+      "sha256": "5110c48242574800301fb2ba8a4fe3b49a6e6be2bbca2f603c21238153c44b05"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\logs\\full\\qwen3.5-9b\\neutral\\2026-10-25T10-32-04-00-00_menu-planning_nUtGR52gB39Sk86s5g7Woi.eval",
+      "bytes": 8872893,
+      "sha256": "434cb2e49d31c5fb249ae61fc5729a2d09457493d0d6676f720d56a48f09b20a"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\t2\\qwen35_positions_1200.jsonl",
+      "bytes": 1977466,
+      "sha256": "07591930f7401daa0005f47841204238c3a2fda392248318dc19d72fd19dbd93"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\domains\\menu_planning\\scripts\\rq2\\replay_rebuild.py",
+      "bytes": 3962,
+      "sha256": "94854a69a81729b67710c41fa5a66c959d90c0911f267d8c142e46f1a9f8c498"
+    }
+  ]
+}
