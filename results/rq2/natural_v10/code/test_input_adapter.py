@@ -11,6 +11,27 @@ import input_adapter as a
 
 
 class AdapterTests(unittest.TestCase):
+    def test_audited_crlf_identity_without_source_change(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / 'fixture.txt'
+            p.write_bytes(b'first\r\nsecond\r\n')
+            before = p.read_bytes()
+            result = a.audited_text_identity(p, a.digest_bytes(b'first\nsecond\n'))
+            self.assertEqual(result['matching_method'], 'CRLF_to_LF_exact_audit_digest')
+            self.assertEqual(result['raw_sha256'], a.digest_bytes(before))
+            self.assertEqual(p.read_bytes(), before)
+            self.assertEqual(a.audited_text_identity(p, a.digest_bytes(before))['matching_method'], 'raw_bytes')
+
+    def test_audited_identity_rejects_substantive_and_other_normalizations(self):
+        expected = a.digest_bytes(b'first\nsecond\n')
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / 'fixture.txt'
+            for payload in (b'first\r\nchanged\r\n', b'\xef\xbb\xbffirst\r\nsecond\r\n',
+                            b'first \r\nsecond\r\n', b'first\rsecond\r'):
+                p.write_bytes(payload)
+                with self.assertRaises(a.InputBlocked):
+                    a.audited_text_identity(p, expected)
+
     def test_gate_precedes_io(self):
         with self.assertRaises(a.InputBlocked):
             a.adapt({})

@@ -35,6 +35,26 @@ def file_sha(path):
     return h.hexdigest()
 
 
+def audited_text_identity(path, expected_sha256):
+    """Accept raw bytes or CRLF-to-LF bytes only when the audited digest matches.
+
+    No source is written. No BOM removal, decoding, whitespace trimming or other
+    text normalization is allowed. Raw frozen input hashes remain independent.
+    """
+    payload = Path(path).read_bytes()
+    raw_sha = digest_bytes(payload)
+    lf_sha = digest_bytes(payload.replace(b'\r\n', b'\n'))
+    if raw_sha == expected_sha256:
+        method = 'raw_bytes'
+    elif lf_sha == expected_sha256:
+        method = 'CRLF_to_LF_exact_audit_digest'
+    else:
+        raise InputBlocked('CPU audit text identity mismatch: ' + str(path))
+    return {'expected_audit_sha256': expected_sha256, 'raw_sha256': raw_sha,
+            'crlf_to_lf_sha256': lf_sha, 'matching_method': method,
+            'crlf_sequences': payload.count(b'\r\n'), 'source_modified': False}
+
+
 def read_json(path):
     path = Path(path)
     opener = gzip.open if path.suffix == '.gz' else open
@@ -360,10 +380,13 @@ def adapt(config):
     originals = unique([json.loads(s) for s in Path(config['original_positions']).read_text().splitlines() if s.strip()], lambda r:r['run_id'])
     projections = unique(read_csv(config['repaired_scores']), lambda r: (r['run_id'], r['pos_type'], int(r['sub_idx'])))
     audit = read_json(config['cpu_audit'])
-    if file_sha(config['original_positions']) != audit['input_hashes']['positions']:
-        raise InputBlocked('CPU audit original-position identity mismatch')
-    if file_sha(config['replay_helper']) != audit['input_hashes']['replay_helper']:
-        raise InputBlocked('CPU audit replay-helper identity mismatch')
+    for config_key, audit_key in (('original_positions', 'positions'),
+                                  ('replay_helper', 'replay_helper')):
+        identity = audited_text_identity(config[config_key], audit['input_hashes'][audit_key])
+        ledger_path = str(Path(config[config_key]).resolve())
+        for item in ledger:
+            if item['path'] == ledger_path:
+                item['audit_text_identity'] = identity
     audited = unique(audit['runs'], lambda r: r['run_id'])
     repairs = read_json(config['repair_audit'])
     diagnostic = unique(repairs['metadata_only_positions'], lambda r: (r['run_id'], r['pos_type'], int(r['sub_idx'])))

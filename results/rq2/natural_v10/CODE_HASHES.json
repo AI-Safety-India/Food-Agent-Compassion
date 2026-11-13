@@ -8,7 +8,7 @@
     },
     {
       "path": "code/input_adapter.py",
-      "sha256": "46cfb0c0ce357f16cbdef8fadf4458f9055a5cb7cddc5090bfebae4342d2bc42"
+      "sha256": "546567561c3eb35940a53544bcfb5ce4a5c84562d400db176e800942e36c10a4"
     },
     {
       "path": "code/run_stage_a.py",
@@ -20,7 +20,7 @@
     },
     {
       "path": "code/test_input_adapter.py",
-      "sha256": "470080f53d39bbbcea815df12ac568b311798042313e5f15bd1e886b3da7cb26"
+      "sha256": "f394cf4d750c9f15f6515050c3b319e60e5309ba53b054dcbf99377723ad5f54"
     },
     {
       "path": "code/test_run_stage_a.py",
@@ -29,6 +29,11 @@
     {
       "path": "design_review/PREFIX_REVIEW_RUBRIC.md",
       "sha256": "2890249ddaef2c75876eb1bb685f07776e3e5625d86a98c80f074319a926d192"
+    },
+    {
+      "path": "AMENDMENT_01_LINE_ENDINGS.md",
+      "sha256": "2e8991bf77df58a82b18da9b4a66d337f46545b7698bf55a3f9b03a50675bfdb"
     }
-  ]
+  ],
+  "amendment": "AMENDMENT_01_LINE_ENDINGS.md"
 }
