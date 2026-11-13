@@ -1,0 +1,11 @@
+{
+  "groups": 731,
+  "prefixes": 1398,
+  "final_decisions": {
+    "welfare": 551,
+    "clean": 832,
+    "unknown": 15
+  },
+  "outcome_data_parsed": false,
+  "delegated_review": true
+}

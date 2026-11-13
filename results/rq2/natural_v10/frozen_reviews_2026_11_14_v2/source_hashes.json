@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_000.json",
+      "sha256": "c2d84c2f0bea76d0085f88412195621badf42c3737e372c7f5880788cd0ac4af"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_001.json",
+      "sha256": "9be1ee309fb482a596857cf00ec0638a5936defa7384388dd12c51697d0bbf8f"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_002.json",
+      "sha256": "217d3b946e0952b30261b3125218a5c4d1081f10a7194ef12ef8e27beece2787"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_003.json",
+      "sha256": "eee9f17091dc5ba8a26d9bb850daadbfb8d372a0c4b28e52fd2b36e82821f3bb"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_004.json",
+      "sha256": "791b92fca50114407e10d26ad7a7f91a44c6df31897ffad99207ac89f2393819"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_005.json",
+      "sha256": "3e1792b5d8c18a8af1eb7f348938a743dafd0ef9724c491bc04bbdfde220d8a5"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_006.json",
+      "sha256": "b55c83dfed8a4eea0a436bcc1db73b8afbb762efef0718db870426834702a415"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_007.json",
+      "sha256": "1828b67ee68cd0e5f44003dda97f577a2bb949b8d4e305df283434d98082a67d"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_008.json",
+      "sha256": "c7f73e31eeda2a4eeabe3006143bf19b061a4d7ebc4b688ac409bd8464f58bc8"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_009.json",
+      "sha256": "15366d415936fee79f469e298d8727bfec4c4cecd567067a6dc00f4ca12f3138"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_010.json",
+      "sha256": "d3cc885783439c641a7b9d7f1f6f60f48d27bb226c2397de1a0a017381e1584f"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_011.json",
+      "sha256": "2761dbb8c5021fb23adbce67dab2892c4c5ddda3ce04adfd9d7b7240aa45e719"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_012.json",
+      "sha256": "b493a9994a7dcd5ceaa14c2b236999e61e4268309b1448c6e735eb5280799b87"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_013.json",
+      "sha256": "c94229d7afa0fec69df154824a9850e9673fd80a203baa67f2e8e2919d852268"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_014.json",
+      "sha256": "371e7188d78c3917064c4101255dc367d391b6a1419ce8716c8a8ee664a8910c"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_015.json",
+      "sha256": "5aef74311b3619df808c09cf116e1a37991bf2964883d7810572dee8f2684790"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_016.json",
+      "sha256": "22d526429428ab434f36c8dfa50730849825b159382cdd8b0c0341a179af005c"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_017.json",
+      "sha256": "a0168f442d7e94a2b090d58bd04dc7d69ec2e843aab83ded290ce89a81c4593d"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_018.json",
+      "sha256": "bd3c3796feb721f514eef721883e30c1f9941b63b51e06c756d3fdc80e8615f9"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_019.json",
+      "sha256": "8d3371ea5e19dd6e3ef95e47fd6e0c1586fb809c7abcb4b11a5d236f94a66a87"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_020.json",
+      "sha256": "b1d5754ef26ebeb3805305eab4d6f2ce0c24eb1479586c938d5fa538ca9b4552"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_021.json",
+      "sha256": "ad3f1e29d499cf79a9327cc460e6caef89f25234c533e75d7a8b890241948640"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_022.json",
+      "sha256": "ae661d2f26d13a833b0c57cc7c84b3ad5f587e3f06134b15e764f7e9f3e1f585"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_023.json",
+      "sha256": "721ac7373064722dd10913e6097b08cc8ab7c67cb1734cef71d8112c8e468369"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_024.json",
+      "sha256": "6f067a61c152f4ec6eb97ec266b6df69cf8ce3676aa54f1cebbb4eb35138439f"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_025.json",
+      "sha256": "14dfa466313b54ba39d70362dfebc81c3ab15db5f8b255e9773aa16cea7bfb19"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_026.json",
+      "sha256": "bd02df6918e8b07186c71645faea069617592166752bc04edfebcdd1d5b6ac12"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_027.json",
+      "sha256": "b20cff6e0ab29edb5bc646e4e8c82c9dc9059d29ce1793cd97bce9cadfb23259"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_028.json",
+      "sha256": "9d5ce0ceabc3dc5a3d48118d2ae9dd591acfe71aff7c653020c5e2176f8f499b"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_029.json",
+      "sha256": "2dd9965918251e0d765b798c63ab6374da31667725014a52ce974df69315076c"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_030.json",
+      "sha256": "f43c5235abd05264d88245b0eafdf33c56c11867ddfb555378c45a39961affee"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_031.json",
+      "sha256": "be442bba433979bbc391c52fa0d001b44fe5ca61f11658061b6768fe15f517c5"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_032.json",
+      "sha256": "35803c09beb0000431be8d6cbe54f836de69bcc16b65cc40ad1672259885866d"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_033.json",
+      "sha256": "32ed81e3ef3d3ee3be9efac9e70c5548350949df70c8a8e0483645fea56e2f99"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_034.json",
+      "sha256": "c4ba735aa430e06a3f4ee06b95bbe04b3b9713c552c7488af7ce7278d8b1f2c8"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_035.json",
+      "sha256": "43e32bf78c9a9bc6ecf99c1b37049cfaf51350236ab0b9d31eeed1b282c7edc3"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_036.json",
+      "sha256": "9bba82a3a41b85916c7e11e0b0801456200a66d710aa17a24ec1e90bd11f99c8"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_037.json",
+      "sha256": "937d592766b8b0be21fb1ff5987817adb6865bd7ba30ae58af418167b438d897"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_038.json",
+      "sha256": "40f94ea550370ecd6335f3f4d75e1656ddd48c98d96a10f57bdc914ff9da51ca"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_039.json",
+      "sha256": "6807bfffbb14c4248c980c9ba50d60da33ba0728f9ba2e365c41a19d52650705"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_040.json",
+      "sha256": "00fd5cc83868a4496569c8cad51c45097c5702bbe999aadd40f378d4cf0f7f0f"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_041.json",
+      "sha256": "38008bc472b86c773c397ea8425e6889cb3fa5ad0047b185e8debe42031566d7"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_042.json",
+      "sha256": "0ef3067ba271199b49ec96ad93dc5ba72edcefe42bef3ff80ca3ea2a590c9591"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_043.json",
+      "sha256": "bdccaac8d93cff89e1b4aed7d0f5e9fae7637099ed701d0f55b9c3bf4a251e5b"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_044.json",
+      "sha256": "1cb057eb711388abfc6bd3fdb31432d9bdbf81a78a22f169d6cdcb76882b13f8"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_045.json",
+      "sha256": "2832643e27cedf3f12d8835228c9e4fd859db5effb0b515595a2af35a5a29db0"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_046.json",
+      "sha256": "4a555393dba962dd89c547e22b05610abeb200df4c6027daab26e96b73abe319"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_047.json",
+      "sha256": "3cad4114f262e5c2265e75821d2e57eedabaa2ecae977ca3ff03ba00f7e184ed"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\batch_048.json",
+      "sha256": "b5f7ad5e8a688c83cba5a2e5118c8cc873f96f4da9c5a0c4db59e5b4a07229c7"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\review_packets\\groups.json",
+      "sha256": "a7e6929aa5694a990a27a8adb6c0611f532d33c6ca7422625b4676035755e2ca"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\reviewer_a.jsonl",
+      "sha256": "474b4bfb253bd00018b8de8f729b63fa55bbdea307f354243c2629e66497679e"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\reviewer_b.jsonl",
+      "sha256": "f8d6288cdea43d921e8fe0ba1bd76ff68ff6e24840da830b8b0151a1bb39e8da"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\reviewer_c.jsonl",
+      "sha256": "3c7bdac378665456f20b4bf441e5abcbc7fa9346d22e78ff6ff20756446ecd24"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\adjudications.jsonl",
+      "sha256": "e9524a0944b4e1039c1eb471d9c98f21b367c3890d58985a6e3b54975e05a71c"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\normalized_records.json",
+      "sha256": "de7a458eb7d508a8433a3c5500ff830afeaba84906a759e65e8e67762ec4082b"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\qwen35_rq1_scores_1200.csv",
+      "sha256": "c53eee1d9b71ad4a114ae133eff1612e8d108624bdfea7b5e5d85b2404e700c8"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\tuning_scenarios.json",
+      "sha256": "9ff037b0b3e77e5cb7f8a2224c4e2a0e212b394fa445d71cccce9cd23a5eff4e"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\design_review\\PREFIX_REVIEW_RUBRIC.md",
+      "sha256": "2890249ddaef2c75876eb1bb685f07776e3e5625d86a98c80f074319a926d192"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\code\\finalize_stage_a.py",
+      "sha256": "e5fb256ad8500376b40a53152ce13e16decbd97e988efe87081ec0fba9d775cc"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\code\\feasibility_kernel.py",
+      "sha256": "7781231852e0b90003f514624a6dab1a157d583ae0c4fa9e9ecccec28d9869eb"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\code\\input_adapter.py",
+      "sha256": "546567561c3eb35940a53544bcfb5ce4a5c84562d400db176e800942e36c10a4"
+    },
+    {
+      "path": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\code\\run_stage_a.py",
+      "sha256": "8c00241c93b8e099ef8e77dd4efb7f8ef79ab5bc7b2d69b2c91d45efc6e164be"
+    }
+  ],
+  "prefix_reviews_sha256": "0c28ad9834897b5f9c0f79df1172607f8d0bf0377c6244d255c0c7fa795e6c6b",
+  "normalized_records": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\stage_a_2026_11_13_03\\normalized_records.json",
+  "rq1_csv": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\qwen35_rq1_scores_1200.csv",
+  "tuning": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\tuning_scenarios.json",
+  "rubric": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\design_review\\PREFIX_REVIEW_RUBRIC.md",
+  "code_paths": [
+    "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\code\\finalize_stage_a.py",
+    "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\code\\feasibility_kernel.py",
+    "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\code\\input_adapter.py",
+    "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\natural_v10\\code\\run_stage_a.py"
+  ]
+}
