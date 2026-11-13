@@ -1,0 +1,165 @@
+{
+  "stage": "before any study generation",
+  "files": [
+    {
+      "path": "results/rq2/askmodel_v11/code/build_manifest.py",
+      "bytes": 11695,
+      "sha256": "b4cdda6870df49a85caf691436ee772aaf51b79f8f86d6f375f4607bab8a3982"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/capacity_input.py",
+      "bytes": 10930,
+      "sha256": "d19515121d577cf611ffeb2b45ffe66329950affda829a5b13b231488403f860"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/CAPACITY_INPUT_README.md",
+      "bytes": 4904,
+      "sha256": "a93cf4d16f76e774141bae02f2446da3ebbadd3bc2012daa0864a3b1ae8086d0"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/capacity_runner.py",
+      "bytes": 17491,
+      "sha256": "8d5a1b54c5418604a960869a77057ac17b572f2a39d396dee931ac44232235eb"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/CAPACITY_RUNNER_README.md",
+      "bytes": 5784,
+      "sha256": "45b2aa82cba34c5089ff5eb1d83830e0d004d2e8b2e898b0c6c172a6903cfd3c"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/CAPACITY_SCORING.md",
+      "bytes": 4281,
+      "sha256": "ecb46a9119049a2cc837db200f236747080e9c890ed854886a92a2163add169b"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/capacity_scoring.py",
+      "bytes": 8631,
+      "sha256": "6adf05df25113893093018e913d1aa1938f90f7c28f2ceea58c79f24939b0faa"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/freeze_tool_schema.py",
+      "bytes": 4650,
+      "sha256": "343558efd172b72be4704a47d8744a792f01692221dc78f827514f7ce21be163"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/test_build_manifest.py",
+      "bytes": 1932,
+      "sha256": "784bc6ecc806a973607f7776b98e28b96b151d6fbb02fe2c5551fae980984e63"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/test_capacity_input.py",
+      "bytes": 6227,
+      "sha256": "79cddfb7469f44c19f2bc7969818d99c176ab65765d70eec20bc329c41c570f7"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/test_capacity_runner.py",
+      "bytes": 7068,
+      "sha256": "7de5fedfa6836b892c581ad2898b005a8fd071e60dd2c09264e5239f67d0ba5b"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/test_capacity_scoring.py",
+      "bytes": 4939,
+      "sha256": "4f907b81e5049f07117444ab7ad0f1e7f4c539a2c44838b59db7daf0c047ad47"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/tool_schema_evidence_2026_11_14_02/tool_schema.json",
+      "bytes": 2705,
+      "sha256": "182bb311a1b1ab462b8f8f70431e251455f0c6d36f5e168b99063dcde5cd0f2f"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/tool_schema_evidence_2026_11_14_02/tool_schema_verification.json",
+      "bytes": 138526,
+      "sha256": "a6d3c1f654a7e13ae592aed0aea3121e019922fb03958c9a5dd29d67fe3e0f76"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/code/verify_manifest.py",
+      "bytes": 2229,
+      "sha256": "b4c533b2a8e12abdbc4c0f6b6876fbb5c596620ff593eeccd92643578d8c205f"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/DESIGN_DRAFT.md",
+      "bytes": 14073,
+      "sha256": "8b2f6e8d53c445304b94aeaaf7300aafd44c6ee8e09ab7164fa997e23b629313"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/execution_freeze_2026_11_14/execution_manifest.json",
+      "bytes": 171770,
+      "sha256": "f5d8cfc9e60fb5cd6b2ca02ebe68ec1613c0b6ab4c2e0d5297fc48dc74178209"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/execution_freeze_2026_11_14/runtime_preparation.json",
+      "bytes": 1714,
+      "sha256": "0ff0235d86c3d5ae83b8756621fd6268cdd013c6d54c44b339916f9f9852ce37"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/execution_freeze_2026_11_14/tokenizer_summary.json",
+      "bytes": 442,
+      "sha256": "a9b7f3fe296958f4f1f1d6f0e25ac9c269a92d1a6f91239f0eaf506711083e50"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/GENERATION_PROTOCOL_DRAFT_2026_11_14.md",
+      "bytes": 6767,
+      "sha256": "b3b75909f0af086f28dad0e6b1b764709488347956dcba56ccf2ebbfa3aba0d5"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/inventory_2026_11_13_01/candidate_jobs.json",
+      "bytes": 6205644,
+      "sha256": "d2b4ba52280759f06fb9e55bc64a44c45f8646149b6d6b180d5be2b2d3e988d4"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/inventory_2026_11_13_01/roster.json",
+      "bytes": 701617,
+      "sha256": "4d13aee408879d7cbbd72bd1b58b1feeb4e69ef9a5dd46a9f10186c714f97209"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/inventory_2026_11_13_01/selected_contexts.json",
+      "bytes": 2622777,
+      "sha256": "2d4b543d4a3017f1596ddc07bb645f5d856a44157c175b7d0f63061c0c3ded2d"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/inventory_2026_11_13_01/source_hashes.json",
+      "bytes": 1893,
+      "sha256": "1cda42403e2296a54ff315e474f3ab85e52128d153444b537ebd8cf6d6986a4e"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/inventory_2026_11_13_01/structural_verification.json",
+      "bytes": 401,
+      "sha256": "079270f598ac6bddb88faed7ccf6a0b3245c4d90631c18e9e15930c1d3abc239"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/inventory_2026_11_13_01/summary.json",
+      "bytes": 925,
+      "sha256": "69a272502ebf0f0bc8392d73f1d37e34fbcc6a8adcf6d08877f5ff3eed3be006"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/PREREGISTRATION_EXECUTION_2026-11-14.md",
+      "bytes": 8988,
+      "sha256": "32eb976458a93650e56a45d5ff24919a07a790b2ec952433ef3f60b6842f751c"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/reference_review_2026_11_14/merged_references.jsonl",
+      "bytes": 284288,
+      "sha256": "d832b86bf72fde47efe29db9c1900dbb5bc6d54ad51076c50af6533af57b233c"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/reference_review_2026_11_14/REVIEW_SUMMARY.md",
+      "bytes": 2718,
+      "sha256": "7c51fd2f7bea0d5970e63245b0d48f9c0d27b0bdf078f86cc723e65a362b7c25"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/reference_review_2026_11_14/reviewer_first25.jsonl",
+      "bytes": 107380,
+      "sha256": "108f1efbc5673be92cbd8a2cc685eabe7f2bdb7da4accd111d55977e849f4d69"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/reference_review_2026_11_14/reviewer_last25.jsonl",
+      "bytes": 98388,
+      "sha256": "309997abdc4852bf73507a898f8393882ef1753061b24b40eb5206c719d26744"
+    },
+    {
+      "path": "results/rq2/askmodel_v11/reference_review_2026_11_14/validation.json",
+      "bytes": 11564,
+      "sha256": "0bcb75fa38dfdeefb9eb36dc49a3c2505403608e5c7759d9dad0ef8ec716d12b"
+    }
+  ]
+}
