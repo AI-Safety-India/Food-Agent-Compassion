@@ -1,0 +1,15 @@
+{
+ "SPOTCHECK.md": "e2fdea1fb190d1b348d11f77fe839676606ca88a9a5bb2f78cd0071fada7c7f9",
+ "confirm_gg_check.py": "8de21a333e8e21036d710c473e162b284b3a17f2dbf3584cc0811f2f81ce4799",
+ "confirm_prompts.json": "94ad95085c8edaade614905ae7e32999c3054d3f21e9ad9b84e17c324bf35a22",
+ "confirm_welfare_check.py": "c028b500c9dc2f8435bfba3f2292d5c8c9e857fecf5d517219429de14ff2bce6",
+ "fresh_welfare.json": "ab0a295824496311666507b334bbb9af0d53176f0476890ed2788d16ed9b9985",
+ "fresh_welfare_draft1.json": "7e63936da71e0c2ca221e06a7240e0c534a7e32ba1addefd1f151bd4da9f644b",
+ "generally_good.json": "9281ce7cacf584fff57fa82211bc3db97bc348f72e3c8bbcfde2d28d9cd5cd38",
+ "generally_good_draft1.json": "c79894d26591d6513ca5e8b19f52f20543afd7011289eba29f823388f50b31ee",
+ "render_confirm.py": "34edfc8d79eb7455f3dbda47798691e18dda01287d422647967ce30fe0e00d28",
+ "review.json": "4d1ab00be28dce50da90b6eba62bdc4bd18f1aaf55984606c101a473989b431b",
+ "v3_check.json": "117d1677498b225391b3ada3b8f4e880cc82f89a87a6d9200113b9672396a5b9",
+ "worker_extract.py": "2e83c99edc48d837ac4f9b8d55f752431dfb266b89f30eab2427c5ed0bbb6e69",
+ "worker_steer.py": "8f0acbe10778df253450206b222d5c2aa2ba789d9699c46fc4f368e72fabda06"
+}
