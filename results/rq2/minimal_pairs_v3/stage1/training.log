@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Person1\OneDrive\Desktop\sfn\Sentient-Futures-Project-git\domains\menu_planning\scripts\minimal_pairs\train_stage1.py", line 376, in <module>
+    main()
+  File "C:\Users\Person1\OneDrive\Desktop\sfn\Sentient-Futures-Project-git\domains\menu_planning\scripts\minimal_pairs\train_stage1.py", line 372, in main
+    fit_and_freeze(args)
+  File "C:\Users\Person1\OneDrive\Desktop\sfn\Sentient-Futures-Project-git\domains\menu_planning\scripts\minimal_pairs\train_stage1.py", line 274, in fit_and_freeze
+    verify_code_commit(args.code_commit, [__file__, args.helper], repo)
+  File "C:\Users\Person1\OneDrive\Desktop\sfn\Sentient-Futures-Project-git\domains\menu_planning\scripts\minimal_pairs\train_stage1.py", line 76, in verify_code_commit
+    raise ValueError("Actual full40-character code commit required")
+ValueError: Actual full40-character code commit required

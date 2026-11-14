@@ -1,0 +1,11 @@
+{
+  "original": "domains/menu_planning/scripts/rq2/run_rq2_gpu_pipeline.py",
+  "original_sha256": "eebf94601bb21248b1279119bede2e65c4f6c5ea3399033512996e5b42a8f174",
+  "copy": "domains/menu_planning/scripts/minimal_pairs/audited_helper_lf.py",
+  "copy_sha256": "d20b03b7f86146abbc5852796999674e90ef242e92208acdebd8736417fab39d",
+  "source_commit": "6d432d568df7690117254bf65c573ebd04779b1a",
+  "difference": "CRLF checkout versus exact committed LF bytes only",
+  "ast_identical": true,
+  "original_edited": false,
+  "training_fits_before_fix": 0
+}
