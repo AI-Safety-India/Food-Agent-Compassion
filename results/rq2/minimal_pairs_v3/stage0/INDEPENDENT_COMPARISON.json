@@ -1,0 +1,10 @@
+{
+  "match": true,
+  "summaries_compared": 34,
+  "integer_fields_compared": 204,
+  "mean_fields_compared": 204,
+  "maximum_absolute_mean_difference": 0.0,
+  "gate": "234/240;continue",
+  "mechanism_flags_match": true,
+  "flagged_count": 0
+}
