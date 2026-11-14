@@ -1,0 +1,44 @@
+[
+  {
+    "source": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\domains\\menu_planning\\scripts\\minimal_pairs\\steer_minimal_pairs.py",
+    "target": "/marimo/domains/menu_planning/scripts/minimal_pairs/steer_minimal_pairs.py",
+    "sha256": "da478999f06d27ea8ae6129574de0c1c8327de1ba378e608a8fc5c0863085ba5",
+    "bytes": 11124
+  },
+  {
+    "source": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\domains\\menu_planning\\scripts\\minimal_pairs\\stage3_supervisor.py",
+    "target": "/marimo/domains/menu_planning/scripts/minimal_pairs/stage3_supervisor.py",
+    "sha256": "f4101e2eb7c87ca29bc6e791804445f62360f52394288b8a9498b02b3b452028",
+    "bytes": 785
+  },
+  {
+    "source": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\minimal_pairs_v3\\STEERING_PREREG.md",
+    "target": "/marimo/results/rq2/minimal_pairs_v3/STEERING_PREREG.md",
+    "sha256": "a377cfc8ef826980f1f4bbfb7e86ab5f296218ba2bcf9bfa8b08ca4eccb1a6e7",
+    "bytes": 9140
+  },
+  {
+    "source": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\minimal_pairs_v3\\stage3\\plan\\PLAN.json",
+    "target": "/marimo/results/rq2/minimal_pairs_v3/stage3/plan/PLAN.json",
+    "sha256": "02513f4280c011d670856b1ad7efbbb7aef6917858ef739e4f71dc14d08aacad",
+    "bytes": 1794
+  },
+  {
+    "source": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\minimal_pairs_v3\\stage3\\plan\\directions.npz",
+    "target": "/marimo/results/rq2/minimal_pairs_v3/stage3/plan/directions.npz",
+    "sha256": "787b16fb8512bd2a9782d93cf97464f7e4d8a72947877e3ca111509ef02ac081",
+    "bytes": 196882
+  },
+  {
+    "source": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\minimal_pairs_v3\\stage3\\plan\\inputs.json",
+    "target": "/marimo/results/rq2/minimal_pairs_v3/stage3/plan/inputs.json",
+    "sha256": "a6a97c01e543414d610885450cf513beff1c11e8dc0a47e29fffad87b99a1669",
+    "bytes": 2716929
+  },
+  {
+    "source": "C:\\Users\\Person1\\OneDrive\\Desktop\\sfn\\Sentient-Futures-Project-git\\results\\rq2\\minimal_pairs_v3\\stage3\\plan\\jobs.json",
+    "target": "/marimo/results/rq2/minimal_pairs_v3/stage3/plan/jobs.json",
+    "sha256": "ecc55e4e928f003549d816d0e51362425caf43a32ba118aaca21db7c381328c0",
+    "bytes": 1005655
+  }
+]
