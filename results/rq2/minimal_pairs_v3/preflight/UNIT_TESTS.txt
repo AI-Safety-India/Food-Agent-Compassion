@@ -1,0 +1,16 @@
+test_calibration_and_off_format (test_extract_minimal_pairs.Tests.test_calibration_and_off_format) ... ok
+test_lock_and_exclusive_write (test_extract_minimal_pairs.Tests.test_lock_and_exclusive_write) ... ok
+test_only_one_leading_space_boundary_allowed (test_extract_minimal_pairs.Tests.test_only_one_leading_space_boundary_allowed) ... ok
+test_positions_both_orders (test_extract_minimal_pairs.Tests.test_positions_both_orders) ... ok
+test_sample_seed_fixed (test_extract_minimal_pairs.Tests.test_sample_seed_fixed) ... ok
+test_single_forward_and_mean_all_layers (test_extract_minimal_pairs.Tests.test_single_forward_and_mean_all_layers) ... ok
+test_synthetic_numeric_fixture (test_extract_minimal_pairs.Tests.test_synthetic_numeric_fixture) ... ok
+test_template_batch_encoding_mapping (test_extract_minimal_pairs.Tests.test_template_batch_encoding_mapping) ... ok
+test_template_mismatch (test_extract_minimal_pairs.Tests.test_template_mismatch) ... ok
+test_text_and_label_tampering_rejected (test_extract_minimal_pairs.Tests.test_text_and_label_tampering_rejected) ... ok
+test_uncertain_recovery_blocks_before_backend (test_extract_minimal_pairs.Tests.test_uncertain_recovery_blocks_before_backend) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.575s
+
+OK

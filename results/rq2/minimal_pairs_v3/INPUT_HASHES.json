@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-11-14T08:06:58.2807442Z",
+  "files": [
+    {
+      "path": "welfare_minimal_pairs/v3/prompts.jsonl",
+      "sha256": "dffff8f6a45f3abaf69c2b5f291952d940a3539debadd4e52108d9a923b3cd9b",
+      "bytes": 494883
+    },
+    {
+      "path": "welfare_minimal_pairs/v3/pairs.json",
+      "sha256": "79d087372d9a0659f3ec9011297a034a4bd7532fc596383c432e9fec9aa48671",
+      "bytes": 71421
+    },
+    {
+      "path": "welfare_minimal_pairs/PROBE_PLAN.md",
+      "sha256": "b8ad97359b9f135a8ce49c48abda8cd2e298fdb541c640efd9441ce93aea7e1a",
+      "bytes": 9797
+    },
+    {
+      "path": "AGENT_PROMPT_MINIMAL_PAIRS_2026-11-14.md",
+      "sha256": "fc26030dd1f1ad6a1629d80e6ebeaddc07db7e8bf5650cef60bbc9892a91b701",
+      "bytes": 24355
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+extraction/**/*.npz
+extraction/shards/
+extraction/*.lock

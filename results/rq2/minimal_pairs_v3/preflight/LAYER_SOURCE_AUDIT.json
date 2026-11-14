@@ -1,0 +1,14 @@
+{
+  "transformers": "5.14.1",
+  "source_files": [
+    {
+      "source": "models/qwen3_5/modeling_qwen3_5.py",
+      "sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+    },
+    {
+      "source": "utils/output_capturing.py",
+      "sha256": "28921dca36f8892e6f50c8b92ebfff3e9aff945f32a88c275e41b1dc0f1b65c1"
+    }
+  ],
+  "finding": "Qwen3_5TextModel uses @capture_outputs with default tie_last_hidden_states=True. Its last_hidden_state is self.norm(hidden_states). Therefore hidden_states[1:] last entry is normalized; entries 1 through 31 are decoder outputs. This is source inspection, not a runtime hook validation."
+}
