@@ -1,0 +1,45 @@
+{
+  "prereg_commit": "61577bd",
+  "prereg_sha256": "a377cfc8ef826980f1f4bbfb7e86ab5f296218ba2bcf9bfa8b08ca4eccb1a6e7",
+  "freeze_sha256": "780e326a329d04531b186b2825f5f3e6dd695fe1f3dc68be207df983cc28ead7",
+  "layer": 21,
+  "sigma": 8.422738075256348,
+  "seed": 20261114,
+  "study_forwards": 9208,
+  "engineering_forwards": 8,
+  "source_hashes": {
+    "index.jsonl": "b123d46dab41b2a926e5885b9064258b858aeafe31f2e91ee121aefdb14f9d71",
+    "layer_21.npz": "8dcfdbdff2017744f9b9ae4e8f6ea3dc58d8c68d8cc105d5b22f64edb28dfb37",
+    "environment.json": "85c4658634bca1f3efb22bc81a0df79e10875efd943aa31960c4356d00320d20",
+    "calibration.json": "521ecdc9f863cc538eeaa4e1fac8dd45499b1b7c7f05b4f1fc18a8919b42c1a6"
+  },
+  "source_primary_sha256": "d84f40f0888b868a34bcde064d5692516d99ecfbb7591a78edae006dbc49fab7",
+  "extractor_sha256": "44d173288932160d44e5bf7e99e53887b364e64b62e9d1b01978787f0a7c36fc",
+  "worker_sha256": "da478999f06d27ea8ae6129574de0c1c8327de1ba378e608a8fc5c0863085ba5",
+  "files": {
+    "directions.npz": "787b16fb8512bd2a9782d93cf97464f7e4d8a72947877e3ca111509ef02ac081",
+    "inputs.json": "a6a97c01e543414d610885450cf513beff1c11e8dc0a47e29fffad87b99a1669",
+    "jobs.json": "ecc55e4e928f003549d816d0e51362425caf43a32ba118aaca21db7c381328c0"
+  },
+  "sanity": [
+    {
+      "prompt_id": "ho-broiler_lighting-1|m|none",
+      "target": "A"
+    },
+    {
+      "prompt_id": "ho-broiler_lighting-1|o|none",
+      "target": "B"
+    },
+    {
+      "prompt_id": "ne-01|m|none",
+      "target": "A"
+    },
+    {
+      "prompt_id": "ne-01|o|none",
+      "target": "B"
+    }
+  ],
+  "review": "Sub-agent code review skipped at explicit user request; four-prompt check required",
+  "alpha_zero": "Reuse original cached logits only after exact sanity equivalence",
+  "paid_authorized": false
+}
