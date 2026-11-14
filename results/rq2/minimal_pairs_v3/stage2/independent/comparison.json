@@ -1,0 +1,1584 @@
+{
+  "pass": true,
+  "absolute_float_tolerance": 1e-10,
+  "comparisons": 315,
+  "max_absolute_difference": 0.0,
+  "failures": [],
+  "checks": [
+    {
+      "path": "result.frozen_primary_layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.control.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.control.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.control.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare-control.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare-control.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare-control.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare-none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare-none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.welfare-none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.control-none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.control-none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_train.metrics.control-none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.control.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.control.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.control.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare-control.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare-control.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare-control.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare-none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare-none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.welfare-none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.control-none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.control-none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.welfare_heldout.metrics.control-none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.control.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.control.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.control.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare-control.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare-control.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare-control.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare-none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare-none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.welfare-none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.control-none.estimate",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.control-none.interval_95[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.line_gap_contrasts.combined_welfare.metrics.control-none.interval_95[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[0].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[0].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[0].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[0].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[1].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[1].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[1].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[1].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[2].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[2].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[2].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[2].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[3].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[3].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[3].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[3].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[4].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[4].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[4].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[4].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[5].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[5].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[5].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[5].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[6].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[6].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[6].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[6].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[7].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[7].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[7].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[7].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[8].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[8].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[8].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[8].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[9].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[9].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[9].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[9].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[10].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[10].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[10].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[10].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[11].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[11].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[11].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[11].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[12].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[12].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[12].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[12].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[13].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[13].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[13].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[13].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[14].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[14].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[14].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[14].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[15].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[15].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[15].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[15].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[16].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[16].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[16].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[16].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[17].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[17].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[17].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[17].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[18].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[18].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[18].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[18].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[19].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[19].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[19].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[19].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[20].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[20].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[20].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[20].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[21].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[21].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[21].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[21].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[22].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[22].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[22].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[22].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[23].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[23].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[23].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[23].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[24].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[24].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[24].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[24].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[25].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[25].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[25].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[25].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[26].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[26].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[26].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[26].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[27].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[27].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[27].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[27].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[28].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[28].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[28].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[28].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[29].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[29].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[29].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[29].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[30].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[30].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[30].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[30].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[31].layer",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[31].cosine",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[31].instruction_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.auxiliary_instruction_cosine_curve[31].train_none_direction_norm",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[0].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[1].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[2].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[3].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[4].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[5].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[6].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[7].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].better_choice_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].better_choice_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].better_choice_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[8].better_oriented_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].better_choice_auc.value",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[9].better_oriented_score_pearson.value",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].better_choice_auc.value",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[10].better_oriented_score_pearson.value",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].prompts",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].candidate_A_auc.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].candidate_A_auc.class_counts.0",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].candidate_A_auc.class_counts.1",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].raw_choice_score_pearson.value",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].better_choice_auc.value",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.final_projection_choice_associations[11].better_oriented_score_pearson.value",
+      "kind": "exact",
+      "equal": true
+    }
+  ]
+}

@@ -1,0 +1,2905 @@
+{
+  "specification": {
+    "stage": 2,
+    "seed": 20261114,
+    "bootstrap_draws": 10000,
+    "primary_direction": "exact frozen primary mass-mean unit direction and layer, no reselection",
+    "line_gap": "(endA-endB) dot frozen d, oriented better-minus-worse; average both orders within pair/condition",
+    "contrasts": [
+      "welfare-control",
+      "welfare-none",
+      "control-none"
+    ],
+    "interval": "percentile95 pair bootstrap10000, shared resampled pairs across all contrasts/conditions within each stratum",
+    "strata": [
+      "welfare_train",
+      "welfare_heldout",
+      "combined_welfare"
+    ],
+    "instruction_direction": "mean(final_welfare-final_control), train pairs only, both orders equally weighted, each layer",
+    "auxiliary_comparator": "train-none mass-mean end direction independently recomputed at each layer; selected layer must exactly match frozen primary",
+    "auxiliary_curve": "cosine per layer is descriptive only, not new selection or new primary",
+    "prediction": "same raw final dot frozen d for AUROC(candidate A choice) and AUROC(better choice); no classifier",
+    "correlations": "Pearson(raw final projection,logitA-logitB); Pearson(raw final projection,better-oriented logit score)",
+    "candidate_ties": "A when logitA-logitB>=0; exact ties counted",
+    "neutral": "candidate-A AUROC/correlation only; better target and better-oriented correlation NA",
+    "prediction_intervals": "none; descriptive metrics with class/constant diagnostics",
+    "layer32": "post-final-normalization; no downstream inter-token mixing; no causal conclusion",
+    "interpretation": "reported contrasts distinguish amplification, unchanged content or separate decision representation descriptively; no new threshold or causal gate"
+  },
+  "frozen_primary_layer": 21,
+  "line_gap_contrasts": {
+    "welfare_train": {
+      "pairs": 70,
+      "prompts": 420,
+      "metrics": {
+        "none": {
+          "estimate": 10.515237602165767,
+          "interval_95": [
+            8.60534110239574,
+            12.426865247232573
+          ]
+        },
+        "welfare": {
+          "estimate": 11.162535944155284,
+          "interval_95": [
+            9.170308496292149,
+            13.13892564584102
+          ]
+        },
+        "control": {
+          "estimate": 10.604589822462627,
+          "interval_95": [
+            8.689116280483349,
+            12.54380087035043
+          ]
+        },
+        "welfare-control": {
+          "estimate": 0.5579461216926574,
+          "interval_95": [
+            0.177067079863378,
+            0.9487908216885157
+          ]
+        },
+        "welfare-none": {
+          "estimate": 0.6472983419895172,
+          "interval_95": [
+            0.25229372145874157,
+            1.0468607289237635
+          ]
+        },
+        "control-none": {
+          "estimate": 0.08935222029685974,
+          "interval_95": [
+            -0.11356283981885229,
+            0.2969102203633102
+          ]
+        }
+      },
+      "bootstrap_draws": 10000,
+      "seed": 20261114,
+      "pair_averages": [
+        {
+          "pair_id": "tr-broiler_breed-1",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 2.7158303260803223,
+          "welfare": 3.8103857040405273,
+          "control": 2.4475717544555664
+        },
+        {
+          "pair_id": "tr-broiler_breed-2",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 10.934898018836975,
+          "welfare": 9.82428789138794,
+          "control": 10.453091502189636
+        },
+        {
+          "pair_id": "tr-broiler_breed-3",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 7.291948199272156,
+          "welfare": 7.935834884643555,
+          "control": 7.350246071815491
+        },
+        {
+          "pair_id": "tr-broiler_breed-4",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 1.4184703826904297,
+          "welfare": 2.1613621711730957,
+          "control": 1.3972139358520508
+        },
+        {
+          "pair_id": "tr-broiler_breed-5",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 2.637707233428955,
+          "welfare": 2.998584747314453,
+          "control": 6.1220502853393555
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-1",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": 24.0088791847229,
+          "welfare": 21.23353385925293,
+          "control": 24.652788639068604
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-2",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": 14.256386280059814,
+          "welfare": 9.722778081893921,
+          "control": 12.956782519817352
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-3",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": 5.157156586647034,
+          "welfare": 3.1963802576065063,
+          "control": 4.487011075019836
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-4",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": -3.082194685935974,
+          "welfare": -3.5058517456054688,
+          "control": -2.1017301082611084
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-5",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": 8.400277256965637,
+          "welfare": 8.201831817626953,
+          "control": 8.454806804656982
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-1",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 21.336139917373657,
+          "welfare": 23.466838121414185,
+          "control": 22.67599630355835
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-2",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 5.575586795806885,
+          "welfare": 5.820255756378174,
+          "control": 5.852799654006958
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-3",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 2.9382882118225098,
+          "welfare": 3.24589204788208,
+          "control": 3.254305839538574
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-4",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 17.484434604644775,
+          "welfare": 20.017993450164795,
+          "control": 16.689161777496338
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-5",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 23.359381198883057,
+          "welfare": 24.486679792404175,
+          "control": 24.656868934631348
+        },
+        {
+          "pair_id": "tr-dairy_pasture-1",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 6.084609746932983,
+          "welfare": 6.006579875946045,
+          "control": 5.97162938117981
+        },
+        {
+          "pair_id": "tr-dairy_pasture-2",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 4.678167104721069,
+          "welfare": 5.5630398988723755,
+          "control": 3.949439525604248
+        },
+        {
+          "pair_id": "tr-dairy_pasture-3",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 20.73198890686035,
+          "welfare": 21.69564700126648,
+          "control": 21.248127460479736
+        },
+        {
+          "pair_id": "tr-dairy_pasture-4",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 11.331822395324707,
+          "welfare": 10.389381885528564,
+          "control": 11.228479743003845
+        },
+        {
+          "pair_id": "tr-dairy_pasture-5",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 10.622514009475708,
+          "welfare": 10.400586485862732,
+          "control": 10.16950786113739
+        },
+        {
+          "pair_id": "tr-egg_housing-1",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 9.242684841156006,
+          "welfare": 11.096280574798584,
+          "control": 8.42353343963623
+        },
+        {
+          "pair_id": "tr-egg_housing-2",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 27.36026382446289,
+          "welfare": 28.35369300842285,
+          "control": 27.114673137664795
+        },
+        {
+          "pair_id": "tr-egg_housing-3",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 10.869361519813538,
+          "welfare": 10.691267728805542,
+          "control": 10.893376350402832
+        },
+        {
+          "pair_id": "tr-egg_housing-4",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 32.00506114959717,
+          "welfare": 32.86794328689575,
+          "control": 31.73063850402832
+        },
+        {
+          "pair_id": "tr-egg_housing-5",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 17.09486675262451,
+          "welfare": 17.18766951560974,
+          "control": 16.2716863155365
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-1",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 10.42625367641449,
+          "welfare": 13.240415453910828,
+          "control": 9.120695650577545
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-2",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 6.384087800979614,
+          "welfare": 5.293102741241455,
+          "control": 4.908041477203369
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-3",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 10.742936491966248,
+          "welfare": 11.89801561832428,
+          "control": 11.486169338226318
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-4",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 4.036789894104004,
+          "welfare": 7.324805498123169,
+          "control": 5.632352113723755
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-5",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 14.823558568954468,
+          "welfare": 15.55033278465271,
+          "control": 14.086433172225952
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-1",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 1.8089423179626465,
+          "welfare": 2.3405232429504395,
+          "control": 1.3567352294921875
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-2",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 7.3467031717300415,
+          "welfare": 6.469347953796387,
+          "control": 6.7789682149887085
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-3",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 3.2975008487701416,
+          "welfare": 1.4773406982421875,
+          "control": 3.7349550127983093
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-4",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 18.620625495910645,
+          "welfare": 18.657373666763306,
+          "control": 18.70660376548767
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-5",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 12.73980987071991,
+          "welfare": 12.09107494354248,
+          "control": 12.710958123207092
+        },
+        {
+          "pair_id": "tr-lobster_killing-1",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": -13.152623295783997,
+          "welfare": -14.364049673080444,
+          "control": -14.091444492340088
+        },
+        {
+          "pair_id": "tr-lobster_killing-2",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": 9.792480230331421,
+          "welfare": 12.842981576919556,
+          "control": 10.336272239685059
+        },
+        {
+          "pair_id": "tr-lobster_killing-3",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": 26.47816514968872,
+          "welfare": 25.476902961730957,
+          "control": 26.7966365814209
+        },
+        {
+          "pair_id": "tr-lobster_killing-4",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": 12.397933721542358,
+          "welfare": 15.752470970153809,
+          "control": 12.411573767662048
+        },
+        {
+          "pair_id": "tr-lobster_killing-5",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": 5.943864583969116,
+          "welfare": 6.645018696784973,
+          "control": 6.489605069160461
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-1",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 21.117910861968994,
+          "welfare": 20.693049430847168,
+          "control": 20.678324699401855
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-2",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 9.034814834594727,
+          "welfare": 9.528154492378235,
+          "control": 7.878769040107727
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-3",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 17.45890712738037,
+          "welfare": 19.05808997154236,
+          "control": 18.177781343460083
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-4",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 13.957931756973267,
+          "welfare": 15.003848791122437,
+          "control": 14.427149534225464
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-5",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 16.732611536979675,
+          "welfare": 20.801252126693726,
+          "control": 18.301732063293457
+        },
+        {
+          "pair_id": "tr-piglet_castration-1",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 16.59870433807373,
+          "welfare": 17.630736112594604,
+          "control": 17.748921632766724
+        },
+        {
+          "pair_id": "tr-piglet_castration-2",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 12.683591365814209,
+          "welfare": 11.868401527404785,
+          "control": 14.267845153808594
+        },
+        {
+          "pair_id": "tr-piglet_castration-3",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 2.2674448490142822,
+          "welfare": 1.8482770919799805,
+          "control": 1.3770256042480469
+        },
+        {
+          "pair_id": "tr-piglet_castration-4",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 3.7324323654174805,
+          "welfare": 3.2022204399108887,
+          "control": 4.241816759109497
+        },
+        {
+          "pair_id": "tr-piglet_castration-5",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 16.002978086471558,
+          "welfare": 14.508838653564453,
+          "control": 16.551661252975464
+        },
+        {
+          "pair_id": "tr-quail_housing-1",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": 21.54771590232849,
+          "welfare": 21.995882511138916,
+          "control": 20.6744225025177
+        },
+        {
+          "pair_id": "tr-quail_housing-2",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": 15.635797023773193,
+          "welfare": 17.977912187576294,
+          "control": 15.679258704185486
+        },
+        {
+          "pair_id": "tr-quail_housing-3",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": -6.1906349658966064,
+          "welfare": -6.047070503234863,
+          "control": -5.257201790809631
+        },
+        {
+          "pair_id": "tr-quail_housing-4",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": 9.336607217788696,
+          "welfare": 12.663093566894531,
+          "control": 9.644410729408264
+        },
+        {
+          "pair_id": "tr-quail_housing-5",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": 26.301128387451172,
+          "welfare": 30.9881010055542,
+          "control": 26.552731037139893
+        },
+        {
+          "pair_id": "tr-sow_gestation-1",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 10.232922315597534,
+          "welfare": 12.02909529209137,
+          "control": 10.997872948646545
+        },
+        {
+          "pair_id": "tr-sow_gestation-2",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 12.115612506866455,
+          "welfare": 14.10488224029541,
+          "control": 12.423437118530273
+        },
+        {
+          "pair_id": "tr-sow_gestation-3",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 2.0379810333251953,
+          "welfare": 5.199141442775726,
+          "control": 3.1672083139419556
+        },
+        {
+          "pair_id": "tr-sow_gestation-4",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 17.56209087371826,
+          "welfare": 18.393982887268066,
+          "control": 18.149365425109863
+        },
+        {
+          "pair_id": "tr-sow_gestation-5",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 10.116384983062744,
+          "welfare": 8.992709875106812,
+          "control": 9.664169073104858
+        },
+        {
+          "pair_id": "tr-trout_slaughter-1",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 2.333378553390503,
+          "welfare": -0.12844038009643555,
+          "control": 1.4403092861175537
+        },
+        {
+          "pair_id": "tr-trout_slaughter-2",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 10.737751841545105,
+          "welfare": 11.334020733833313,
+          "control": 10.317035555839539
+        },
+        {
+          "pair_id": "tr-trout_slaughter-3",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 6.02863085269928,
+          "welfare": 5.667261481285095,
+          "control": 4.608809113502502
+        },
+        {
+          "pair_id": "tr-trout_slaughter-4",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 4.250397324562073,
+          "welfare": 5.5961281061172485,
+          "control": 3.883451223373413
+        },
+        {
+          "pair_id": "tr-trout_slaughter-5",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 2.914320468902588,
+          "welfare": 3.7187998294830322,
+          "control": 2.5810041427612305
+        },
+        {
+          "pair_id": "tr-veal_housing-1",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 8.124927759170532,
+          "welfare": 11.557195544242859,
+          "control": 8.450899600982666
+        },
+        {
+          "pair_id": "tr-veal_housing-2",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 2.396968364715576,
+          "welfare": 5.264620542526245,
+          "control": 3.260698080062866
+        },
+        {
+          "pair_id": "tr-veal_housing-3",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 2.3379956483840942,
+          "welfare": 3.765336751937866,
+          "control": 2.3454519510269165
+        },
+        {
+          "pair_id": "tr-veal_housing-4",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 10.223810315132141,
+          "welfare": 12.754133462905884,
+          "control": 10.83794105052948
+        },
+        {
+          "pair_id": "tr-veal_housing-5",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 12.293960332870483,
+          "welfare": 13.843327641487122,
+          "control": 12.434374451637268
+        }
+      ]
+    },
+    "welfare_heldout": {
+      "pairs": 50,
+      "prompts": 300,
+      "metrics": {
+        "none": {
+          "estimate": 5.386277793645859,
+          "interval_95": [
+            3.801331748902798,
+            6.9930283418595796
+          ]
+        },
+        "welfare": {
+          "estimate": 6.402910022735596,
+          "interval_95": [
+            4.737586784273386,
+            8.11238952755928
+          ]
+        },
+        "control": {
+          "estimate": 5.581695263385773,
+          "interval_95": [
+            3.9916229830384253,
+            7.200554239392281
+          ]
+        },
+        "welfare-control": {
+          "estimate": 0.821214759349823,
+          "interval_95": [
+            0.41641089135408405,
+            1.2260614508390426
+          ]
+        },
+        "welfare-none": {
+          "estimate": 1.016632229089737,
+          "interval_95": [
+            0.6010059121847152,
+            1.4640452706813811
+          ]
+        },
+        "control-none": {
+          "estimate": 0.19541746973991395,
+          "interval_95": [
+            0.0004981862902641332,
+            0.3887525506019591
+          ]
+        }
+      },
+      "bootstrap_draws": 10000,
+      "seed": 20261114,
+      "pair_averages": [
+        {
+          "pair_id": "ho-broiler_lighting-1",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 7.250282287597656,
+          "welfare": 8.103086590766907,
+          "control": 7.04109787940979
+        },
+        {
+          "pair_id": "ho-broiler_lighting-2",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 2.580277442932129,
+          "welfare": 7.8859429359436035,
+          "control": 3.0029079914093018
+        },
+        {
+          "pair_id": "ho-broiler_lighting-3",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 7.134823322296143,
+          "welfare": 9.215352177619934,
+          "control": 6.646529912948608
+        },
+        {
+          "pair_id": "ho-broiler_lighting-4",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 9.463448643684387,
+          "welfare": 11.449328064918518,
+          "control": 9.55281114578247
+        },
+        {
+          "pair_id": "ho-broiler_lighting-5",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 6.345601320266724,
+          "welfare": 9.322673320770264,
+          "control": 7.1942384243011475
+        },
+        {
+          "pair_id": "ho-butter_tethering-1",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": 15.226329565048218,
+          "welfare": 19.36319398880005,
+          "control": 16.105409145355225
+        },
+        {
+          "pair_id": "ho-butter_tethering-2",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": 12.098806619644165,
+          "welfare": 13.786156296730042,
+          "control": 12.432365775108337
+        },
+        {
+          "pair_id": "ho-butter_tethering-3",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": -0.6444263458251953,
+          "welfare": 0.2868185043334961,
+          "control": -0.36399173736572266
+        },
+        {
+          "pair_id": "ho-butter_tethering-4",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": 13.615904569625854,
+          "welfare": 15.483396768569946,
+          "control": 14.61808466911316
+        },
+        {
+          "pair_id": "ho-butter_tethering-5",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": 0.46260976791381836,
+          "welfare": 2.356171131134033,
+          "control": 1.0841894149780273
+        },
+        {
+          "pair_id": "ho-cattle_handling-1",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 15.50093388557434,
+          "welfare": 15.357487678527832,
+          "control": 15.357089877128601
+        },
+        {
+          "pair_id": "ho-cattle_handling-2",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 15.22679591178894,
+          "welfare": 15.155758738517761,
+          "control": 14.559893250465393
+        },
+        {
+          "pair_id": "ho-cattle_handling-3",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 3.2225637435913086,
+          "welfare": 2.9685064554214478,
+          "control": 3.268770933151245
+        },
+        {
+          "pair_id": "ho-cattle_handling-4",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 8.428848505020142,
+          "welfare": 11.26945948600769,
+          "control": 8.994487166404724
+        },
+        {
+          "pair_id": "ho-cattle_handling-5",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 4.5433454513549805,
+          "welfare": 4.398362636566162,
+          "control": 4.6446545124053955
+        },
+        {
+          "pair_id": "ho-chicken_transport-1",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": 0.7466850876808167,
+          "welfare": 3.5600677132606506,
+          "control": 2.5810067653656006
+        },
+        {
+          "pair_id": "ho-chicken_transport-2",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": 1.5114591121673584,
+          "welfare": 1.008085012435913,
+          "control": 0.473594069480896
+        },
+        {
+          "pair_id": "ho-chicken_transport-3",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": 9.672288179397583,
+          "welfare": 13.241940379142761,
+          "control": 10.803411602973938
+        },
+        {
+          "pair_id": "ho-chicken_transport-4",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": 1.291398525238037,
+          "welfare": 0.17321473360061646,
+          "control": 1.7456940412521362
+        },
+        {
+          "pair_id": "ho-chicken_transport-5",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": -2.7242696285247803,
+          "welfare": -2.4168741703033447,
+          "control": -2.994945526123047
+        },
+        {
+          "pair_id": "ho-duck_water-1",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 8.679349660873413,
+          "welfare": 9.803918600082397,
+          "control": 7.367028713226318
+        },
+        {
+          "pair_id": "ho-duck_water-2",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 2.0204360485076904,
+          "welfare": 3.7387797832489014,
+          "control": 2.0946173667907715
+        },
+        {
+          "pair_id": "ho-duck_water-3",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 8.15067744255066,
+          "welfare": 8.236175298690796,
+          "control": 9.21971344947815
+        },
+        {
+          "pair_id": "ho-duck_water-4",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 13.70097553730011,
+          "welfare": 14.38466477394104,
+          "control": 14.683005452156067
+        },
+        {
+          "pair_id": "ho-duck_water-5",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 2.175903797149658,
+          "welfare": 1.741941213607788,
+          "control": 0.6067240238189697
+        },
+        {
+          "pair_id": "ho-foie_gras-1",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 3.909057140350342,
+          "welfare": 4.218950986862183,
+          "control": 4.5696797370910645
+        },
+        {
+          "pair_id": "ho-foie_gras-2",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 2.4264341592788696,
+          "welfare": 2.708796441555023,
+          "control": 2.743778944015503
+        },
+        {
+          "pair_id": "ho-foie_gras-3",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 11.163187623023987,
+          "welfare": 12.718477606773376,
+          "control": 11.361845135688782
+        },
+        {
+          "pair_id": "ho-foie_gras-4",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 18.75970685482025,
+          "welfare": 19.073996424674988,
+          "control": 17.78103256225586
+        },
+        {
+          "pair_id": "ho-foie_gras-5",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 8.30150282382965,
+          "welfare": 10.36898136138916,
+          "control": 9.180451035499573
+        },
+        {
+          "pair_id": "ho-force_moulting-1",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 7.385688781738281,
+          "welfare": 7.429771423339844,
+          "control": 7.8304688930511475
+        },
+        {
+          "pair_id": "ho-force_moulting-2",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 2.6130906343460083,
+          "welfare": 0.5282827019691467,
+          "control": 4.099275231361389
+        },
+        {
+          "pair_id": "ho-force_moulting-3",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 9.306645274162292,
+          "welfare": 9.734521985054016,
+          "control": 9.27272629737854
+        },
+        {
+          "pair_id": "ho-force_moulting-4",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 2.272696018218994,
+          "welfare": 2.2887868881225586,
+          "control": 2.1344046592712402
+        },
+        {
+          "pair_id": "ho-force_moulting-5",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 6.941045165061951,
+          "welfare": 6.6202192306518555,
+          "control": 6.315834999084473
+        },
+        {
+          "pair_id": "ho-live_export-1",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 7.8187254667282104,
+          "welfare": 10.824284672737122,
+          "control": 8.779414057731628
+        },
+        {
+          "pair_id": "ho-live_export-2",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 0.8409433364868164,
+          "welfare": 0.058264732360839844,
+          "control": 0.4615638256072998
+        },
+        {
+          "pair_id": "ho-live_export-3",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 3.9879236221313477,
+          "welfare": 4.72158670425415,
+          "control": 3.254851818084717
+        },
+        {
+          "pair_id": "ho-live_export-4",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 4.625215768814087,
+          "welfare": 4.838335752487183,
+          "control": 4.015989303588867
+        },
+        {
+          "pair_id": "ho-live_export-5",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 6.03489351272583,
+          "welfare": 6.2073280811309814,
+          "control": 5.434817433357239
+        },
+        {
+          "pair_id": "ho-male_chick_culling-1",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": -1.5107836723327637,
+          "welfare": -1.3337547779083252,
+          "control": -1.1900749206542969
+        },
+        {
+          "pair_id": "ho-male_chick_culling-2",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": -2.5792064666748047,
+          "welfare": -2.7549184560775757,
+          "control": -2.3952372074127197
+        },
+        {
+          "pair_id": "ho-male_chick_culling-3",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": -6.42807674407959,
+          "welfare": -4.523269176483154,
+          "control": -5.4154311418533325
+        },
+        {
+          "pair_id": "ho-male_chick_culling-4",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": 6.175192832946777,
+          "welfare": 6.691521048545837,
+          "control": 6.25495183467865
+        },
+        {
+          "pair_id": "ho-male_chick_culling-5",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": 3.769226908683777,
+          "welfare": 3.9599868059158325,
+          "control": 4.594025373458862
+        },
+        {
+          "pair_id": "ho-turkey_stocking-1",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": 14.32880163192749,
+          "welfare": 14.257448673248291,
+          "control": 15.064871907234192
+        },
+        {
+          "pair_id": "ho-turkey_stocking-2",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": 0.9022178649902344,
+          "welfare": 6.671580910682678,
+          "control": 1.5603182315826416
+        },
+        {
+          "pair_id": "ho-turkey_stocking-3",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": 1.404273509979248,
+          "welfare": 2.795987129211426,
+          "control": 1.3665592670440674
+        },
+        {
+          "pair_id": "ho-turkey_stocking-4",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": -6.297982215881348,
+          "welfare": -4.588260650634766,
+          "control": -6.050988078117371
+        },
+        {
+          "pair_id": "ho-turkey_stocking-5",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": -2.517578601837158,
+          "welfare": -3.245013475418091,
+          "control": -2.658754348754883
+        }
+      ]
+    },
+    "combined_welfare": {
+      "pairs": 120,
+      "prompts": 720,
+      "metrics": {
+        "none": {
+          "estimate": 8.378171015282472,
+          "interval_95": [
+            7.040223205511769,
+            9.790079113555452
+          ]
+        },
+        "welfare": {
+          "estimate": 9.17935847689708,
+          "interval_95": [
+            7.7755662900954485,
+            10.631491010089716
+          ]
+        },
+        "control": {
+          "estimate": 8.511717089513938,
+          "interval_95": [
+            7.158832936671873,
+            9.92285913836211
+          ]
+        },
+        "welfare-control": {
+          "estimate": 0.6676413873831432,
+          "interval_95": [
+            0.3832363278294603,
+            0.951036382789413
+          ]
+        },
+        "welfare-none": {
+          "estimate": 0.8011874616146087,
+          "interval_95": [
+            0.5065108986447255,
+            1.1010294861222307
+          ]
+        },
+        "control-none": {
+          "estimate": 0.13354607423146567,
+          "interval_95": [
+            -0.003580976786712805,
+            0.28021853368729355
+          ]
+        }
+      },
+      "bootstrap_draws": 10000,
+      "seed": 20261114,
+      "pair_averages": [
+        {
+          "pair_id": "ho-broiler_lighting-1",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 7.250282287597656,
+          "welfare": 8.103086590766907,
+          "control": 7.04109787940979
+        },
+        {
+          "pair_id": "ho-broiler_lighting-2",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 2.580277442932129,
+          "welfare": 7.8859429359436035,
+          "control": 3.0029079914093018
+        },
+        {
+          "pair_id": "ho-broiler_lighting-3",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 7.134823322296143,
+          "welfare": 9.215352177619934,
+          "control": 6.646529912948608
+        },
+        {
+          "pair_id": "ho-broiler_lighting-4",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 9.463448643684387,
+          "welfare": 11.449328064918518,
+          "control": 9.55281114578247
+        },
+        {
+          "pair_id": "ho-broiler_lighting-5",
+          "set": "welfare_heldout",
+          "mechanism": "broiler_lighting",
+          "none": 6.345601320266724,
+          "welfare": 9.322673320770264,
+          "control": 7.1942384243011475
+        },
+        {
+          "pair_id": "ho-butter_tethering-1",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": 15.226329565048218,
+          "welfare": 19.36319398880005,
+          "control": 16.105409145355225
+        },
+        {
+          "pair_id": "ho-butter_tethering-2",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": 12.098806619644165,
+          "welfare": 13.786156296730042,
+          "control": 12.432365775108337
+        },
+        {
+          "pair_id": "ho-butter_tethering-3",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": -0.6444263458251953,
+          "welfare": 0.2868185043334961,
+          "control": -0.36399173736572266
+        },
+        {
+          "pair_id": "ho-butter_tethering-4",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": 13.615904569625854,
+          "welfare": 15.483396768569946,
+          "control": 14.61808466911316
+        },
+        {
+          "pair_id": "ho-butter_tethering-5",
+          "set": "welfare_heldout",
+          "mechanism": "butter_tethering",
+          "none": 0.46260976791381836,
+          "welfare": 2.356171131134033,
+          "control": 1.0841894149780273
+        },
+        {
+          "pair_id": "ho-cattle_handling-1",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 15.50093388557434,
+          "welfare": 15.357487678527832,
+          "control": 15.357089877128601
+        },
+        {
+          "pair_id": "ho-cattle_handling-2",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 15.22679591178894,
+          "welfare": 15.155758738517761,
+          "control": 14.559893250465393
+        },
+        {
+          "pair_id": "ho-cattle_handling-3",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 3.2225637435913086,
+          "welfare": 2.9685064554214478,
+          "control": 3.268770933151245
+        },
+        {
+          "pair_id": "ho-cattle_handling-4",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 8.428848505020142,
+          "welfare": 11.26945948600769,
+          "control": 8.994487166404724
+        },
+        {
+          "pair_id": "ho-cattle_handling-5",
+          "set": "welfare_heldout",
+          "mechanism": "cattle_handling",
+          "none": 4.5433454513549805,
+          "welfare": 4.398362636566162,
+          "control": 4.6446545124053955
+        },
+        {
+          "pair_id": "ho-chicken_transport-1",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": 0.7466850876808167,
+          "welfare": 3.5600677132606506,
+          "control": 2.5810067653656006
+        },
+        {
+          "pair_id": "ho-chicken_transport-2",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": 1.5114591121673584,
+          "welfare": 1.008085012435913,
+          "control": 0.473594069480896
+        },
+        {
+          "pair_id": "ho-chicken_transport-3",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": 9.672288179397583,
+          "welfare": 13.241940379142761,
+          "control": 10.803411602973938
+        },
+        {
+          "pair_id": "ho-chicken_transport-4",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": 1.291398525238037,
+          "welfare": 0.17321473360061646,
+          "control": 1.7456940412521362
+        },
+        {
+          "pair_id": "ho-chicken_transport-5",
+          "set": "welfare_heldout",
+          "mechanism": "chicken_transport",
+          "none": -2.7242696285247803,
+          "welfare": -2.4168741703033447,
+          "control": -2.994945526123047
+        },
+        {
+          "pair_id": "ho-duck_water-1",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 8.679349660873413,
+          "welfare": 9.803918600082397,
+          "control": 7.367028713226318
+        },
+        {
+          "pair_id": "ho-duck_water-2",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 2.0204360485076904,
+          "welfare": 3.7387797832489014,
+          "control": 2.0946173667907715
+        },
+        {
+          "pair_id": "ho-duck_water-3",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 8.15067744255066,
+          "welfare": 8.236175298690796,
+          "control": 9.21971344947815
+        },
+        {
+          "pair_id": "ho-duck_water-4",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 13.70097553730011,
+          "welfare": 14.38466477394104,
+          "control": 14.683005452156067
+        },
+        {
+          "pair_id": "ho-duck_water-5",
+          "set": "welfare_heldout",
+          "mechanism": "duck_water",
+          "none": 2.175903797149658,
+          "welfare": 1.741941213607788,
+          "control": 0.6067240238189697
+        },
+        {
+          "pair_id": "ho-foie_gras-1",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 3.909057140350342,
+          "welfare": 4.218950986862183,
+          "control": 4.5696797370910645
+        },
+        {
+          "pair_id": "ho-foie_gras-2",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 2.4264341592788696,
+          "welfare": 2.708796441555023,
+          "control": 2.743778944015503
+        },
+        {
+          "pair_id": "ho-foie_gras-3",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 11.163187623023987,
+          "welfare": 12.718477606773376,
+          "control": 11.361845135688782
+        },
+        {
+          "pair_id": "ho-foie_gras-4",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 18.75970685482025,
+          "welfare": 19.073996424674988,
+          "control": 17.78103256225586
+        },
+        {
+          "pair_id": "ho-foie_gras-5",
+          "set": "welfare_heldout",
+          "mechanism": "foie_gras",
+          "none": 8.30150282382965,
+          "welfare": 10.36898136138916,
+          "control": 9.180451035499573
+        },
+        {
+          "pair_id": "ho-force_moulting-1",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 7.385688781738281,
+          "welfare": 7.429771423339844,
+          "control": 7.8304688930511475
+        },
+        {
+          "pair_id": "ho-force_moulting-2",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 2.6130906343460083,
+          "welfare": 0.5282827019691467,
+          "control": 4.099275231361389
+        },
+        {
+          "pair_id": "ho-force_moulting-3",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 9.306645274162292,
+          "welfare": 9.734521985054016,
+          "control": 9.27272629737854
+        },
+        {
+          "pair_id": "ho-force_moulting-4",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 2.272696018218994,
+          "welfare": 2.2887868881225586,
+          "control": 2.1344046592712402
+        },
+        {
+          "pair_id": "ho-force_moulting-5",
+          "set": "welfare_heldout",
+          "mechanism": "force_moulting",
+          "none": 6.941045165061951,
+          "welfare": 6.6202192306518555,
+          "control": 6.315834999084473
+        },
+        {
+          "pair_id": "ho-live_export-1",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 7.8187254667282104,
+          "welfare": 10.824284672737122,
+          "control": 8.779414057731628
+        },
+        {
+          "pair_id": "ho-live_export-2",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 0.8409433364868164,
+          "welfare": 0.058264732360839844,
+          "control": 0.4615638256072998
+        },
+        {
+          "pair_id": "ho-live_export-3",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 3.9879236221313477,
+          "welfare": 4.72158670425415,
+          "control": 3.254851818084717
+        },
+        {
+          "pair_id": "ho-live_export-4",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 4.625215768814087,
+          "welfare": 4.838335752487183,
+          "control": 4.015989303588867
+        },
+        {
+          "pair_id": "ho-live_export-5",
+          "set": "welfare_heldout",
+          "mechanism": "live_export",
+          "none": 6.03489351272583,
+          "welfare": 6.2073280811309814,
+          "control": 5.434817433357239
+        },
+        {
+          "pair_id": "ho-male_chick_culling-1",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": -1.5107836723327637,
+          "welfare": -1.3337547779083252,
+          "control": -1.1900749206542969
+        },
+        {
+          "pair_id": "ho-male_chick_culling-2",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": -2.5792064666748047,
+          "welfare": -2.7549184560775757,
+          "control": -2.3952372074127197
+        },
+        {
+          "pair_id": "ho-male_chick_culling-3",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": -6.42807674407959,
+          "welfare": -4.523269176483154,
+          "control": -5.4154311418533325
+        },
+        {
+          "pair_id": "ho-male_chick_culling-4",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": 6.175192832946777,
+          "welfare": 6.691521048545837,
+          "control": 6.25495183467865
+        },
+        {
+          "pair_id": "ho-male_chick_culling-5",
+          "set": "welfare_heldout",
+          "mechanism": "male_chick_culling",
+          "none": 3.769226908683777,
+          "welfare": 3.9599868059158325,
+          "control": 4.594025373458862
+        },
+        {
+          "pair_id": "ho-turkey_stocking-1",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": 14.32880163192749,
+          "welfare": 14.257448673248291,
+          "control": 15.064871907234192
+        },
+        {
+          "pair_id": "ho-turkey_stocking-2",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": 0.9022178649902344,
+          "welfare": 6.671580910682678,
+          "control": 1.5603182315826416
+        },
+        {
+          "pair_id": "ho-turkey_stocking-3",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": 1.404273509979248,
+          "welfare": 2.795987129211426,
+          "control": 1.3665592670440674
+        },
+        {
+          "pair_id": "ho-turkey_stocking-4",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": -6.297982215881348,
+          "welfare": -4.588260650634766,
+          "control": -6.050988078117371
+        },
+        {
+          "pair_id": "ho-turkey_stocking-5",
+          "set": "welfare_heldout",
+          "mechanism": "turkey_stocking",
+          "none": -2.517578601837158,
+          "welfare": -3.245013475418091,
+          "control": -2.658754348754883
+        },
+        {
+          "pair_id": "tr-broiler_breed-1",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 2.7158303260803223,
+          "welfare": 3.8103857040405273,
+          "control": 2.4475717544555664
+        },
+        {
+          "pair_id": "tr-broiler_breed-2",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 10.934898018836975,
+          "welfare": 9.82428789138794,
+          "control": 10.453091502189636
+        },
+        {
+          "pair_id": "tr-broiler_breed-3",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 7.291948199272156,
+          "welfare": 7.935834884643555,
+          "control": 7.350246071815491
+        },
+        {
+          "pair_id": "tr-broiler_breed-4",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 1.4184703826904297,
+          "welfare": 2.1613621711730957,
+          "control": 1.3972139358520508
+        },
+        {
+          "pair_id": "tr-broiler_breed-5",
+          "set": "welfare_train",
+          "mechanism": "broiler_breed",
+          "none": 2.637707233428955,
+          "welfare": 2.998584747314453,
+          "control": 6.1220502853393555
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-1",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": 24.0088791847229,
+          "welfare": 21.23353385925293,
+          "control": 24.652788639068604
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-2",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": 14.256386280059814,
+          "welfare": 9.722778081893921,
+          "control": 12.956782519817352
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-3",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": 5.157156586647034,
+          "welfare": 3.1963802576065063,
+          "control": 4.487011075019836
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-4",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": -3.082194685935974,
+          "welfare": -3.5058517456054688,
+          "control": -2.1017301082611084
+        },
+        {
+          "pair_id": "tr-broiler_slaughter-5",
+          "set": "welfare_train",
+          "mechanism": "broiler_slaughter",
+          "none": 8.400277256965637,
+          "welfare": 8.201831817626953,
+          "control": 8.454806804656982
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-1",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 21.336139917373657,
+          "welfare": 23.466838121414185,
+          "control": 22.67599630355835
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-2",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 5.575586795806885,
+          "welfare": 5.820255756378174,
+          "control": 5.852799654006958
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-3",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 2.9382882118225098,
+          "welfare": 3.24589204788208,
+          "control": 3.254305839538574
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-4",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 17.484434604644775,
+          "welfare": 20.017993450164795,
+          "control": 16.689161777496338
+        },
+        {
+          "pair_id": "tr-cow_calf_separation-5",
+          "set": "welfare_train",
+          "mechanism": "cow_calf_separation",
+          "none": 23.359381198883057,
+          "welfare": 24.486679792404175,
+          "control": 24.656868934631348
+        },
+        {
+          "pair_id": "tr-dairy_pasture-1",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 6.084609746932983,
+          "welfare": 6.006579875946045,
+          "control": 5.97162938117981
+        },
+        {
+          "pair_id": "tr-dairy_pasture-2",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 4.678167104721069,
+          "welfare": 5.5630398988723755,
+          "control": 3.949439525604248
+        },
+        {
+          "pair_id": "tr-dairy_pasture-3",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 20.73198890686035,
+          "welfare": 21.69564700126648,
+          "control": 21.248127460479736
+        },
+        {
+          "pair_id": "tr-dairy_pasture-4",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 11.331822395324707,
+          "welfare": 10.389381885528564,
+          "control": 11.228479743003845
+        },
+        {
+          "pair_id": "tr-dairy_pasture-5",
+          "set": "welfare_train",
+          "mechanism": "dairy_pasture",
+          "none": 10.622514009475708,
+          "welfare": 10.400586485862732,
+          "control": 10.16950786113739
+        },
+        {
+          "pair_id": "tr-egg_housing-1",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 9.242684841156006,
+          "welfare": 11.096280574798584,
+          "control": 8.42353343963623
+        },
+        {
+          "pair_id": "tr-egg_housing-2",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 27.36026382446289,
+          "welfare": 28.35369300842285,
+          "control": 27.114673137664795
+        },
+        {
+          "pair_id": "tr-egg_housing-3",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 10.869361519813538,
+          "welfare": 10.691267728805542,
+          "control": 10.893376350402832
+        },
+        {
+          "pair_id": "tr-egg_housing-4",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 32.00506114959717,
+          "welfare": 32.86794328689575,
+          "control": 31.73063850402832
+        },
+        {
+          "pair_id": "tr-egg_housing-5",
+          "set": "welfare_train",
+          "mechanism": "egg_housing",
+          "none": 17.09486675262451,
+          "welfare": 17.18766951560974,
+          "control": 16.2716863155365
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-1",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 10.42625367641449,
+          "welfare": 13.240415453910828,
+          "control": 9.120695650577545
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-2",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 6.384087800979614,
+          "welfare": 5.293102741241455,
+          "control": 4.908041477203369
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-3",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 10.742936491966248,
+          "welfare": 11.89801561832428,
+          "control": 11.486169338226318
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-4",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 4.036789894104004,
+          "welfare": 7.324805498123169,
+          "control": 5.632352113723755
+        },
+        {
+          "pair_id": "tr-eyestalk_ablation-5",
+          "set": "welfare_train",
+          "mechanism": "eyestalk_ablation",
+          "none": 14.823558568954468,
+          "welfare": 15.55033278465271,
+          "control": 14.086433172225952
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-1",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 1.8089423179626465,
+          "welfare": 2.3405232429504395,
+          "control": 1.3567352294921875
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-2",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 7.3467031717300415,
+          "welfare": 6.469347953796387,
+          "control": 6.7789682149887085
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-3",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 3.2975008487701416,
+          "welfare": 1.4773406982421875,
+          "control": 3.7349550127983093
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-4",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 18.620625495910645,
+          "welfare": 18.657373666763306,
+          "control": 18.70660376548767
+        },
+        {
+          "pair_id": "tr-fish_slaughter_seabass-5",
+          "set": "welfare_train",
+          "mechanism": "fish_slaughter_seabass",
+          "none": 12.73980987071991,
+          "welfare": 12.09107494354248,
+          "control": 12.710958123207092
+        },
+        {
+          "pair_id": "tr-lobster_killing-1",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": -13.152623295783997,
+          "welfare": -14.364049673080444,
+          "control": -14.091444492340088
+        },
+        {
+          "pair_id": "tr-lobster_killing-2",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": 9.792480230331421,
+          "welfare": 12.842981576919556,
+          "control": 10.336272239685059
+        },
+        {
+          "pair_id": "tr-lobster_killing-3",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": 26.47816514968872,
+          "welfare": 25.476902961730957,
+          "control": 26.7966365814209
+        },
+        {
+          "pair_id": "tr-lobster_killing-4",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": 12.397933721542358,
+          "welfare": 15.752470970153809,
+          "control": 12.411573767662048
+        },
+        {
+          "pair_id": "tr-lobster_killing-5",
+          "set": "welfare_train",
+          "mechanism": "lobster_killing",
+          "none": 5.943864583969116,
+          "welfare": 6.645018696784973,
+          "control": 6.489605069160461
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-1",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 21.117910861968994,
+          "welfare": 20.693049430847168,
+          "control": 20.678324699401855
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-2",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 9.034814834594727,
+          "welfare": 9.528154492378235,
+          "control": 7.878769040107727
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-3",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 17.45890712738037,
+          "welfare": 19.05808997154236,
+          "control": 18.177781343460083
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-4",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 13.957931756973267,
+          "welfare": 15.003848791122437,
+          "control": 14.427149534225464
+        },
+        {
+          "pair_id": "tr-pig_tails_enrichment-5",
+          "set": "welfare_train",
+          "mechanism": "pig_tails_enrichment",
+          "none": 16.732611536979675,
+          "welfare": 20.801252126693726,
+          "control": 18.301732063293457
+        },
+        {
+          "pair_id": "tr-piglet_castration-1",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 16.59870433807373,
+          "welfare": 17.630736112594604,
+          "control": 17.748921632766724
+        },
+        {
+          "pair_id": "tr-piglet_castration-2",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 12.683591365814209,
+          "welfare": 11.868401527404785,
+          "control": 14.267845153808594
+        },
+        {
+          "pair_id": "tr-piglet_castration-3",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 2.2674448490142822,
+          "welfare": 1.8482770919799805,
+          "control": 1.3770256042480469
+        },
+        {
+          "pair_id": "tr-piglet_castration-4",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 3.7324323654174805,
+          "welfare": 3.2022204399108887,
+          "control": 4.241816759109497
+        },
+        {
+          "pair_id": "tr-piglet_castration-5",
+          "set": "welfare_train",
+          "mechanism": "piglet_castration",
+          "none": 16.002978086471558,
+          "welfare": 14.508838653564453,
+          "control": 16.551661252975464
+        },
+        {
+          "pair_id": "tr-quail_housing-1",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": 21.54771590232849,
+          "welfare": 21.995882511138916,
+          "control": 20.6744225025177
+        },
+        {
+          "pair_id": "tr-quail_housing-2",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": 15.635797023773193,
+          "welfare": 17.977912187576294,
+          "control": 15.679258704185486
+        },
+        {
+          "pair_id": "tr-quail_housing-3",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": -6.1906349658966064,
+          "welfare": -6.047070503234863,
+          "control": -5.257201790809631
+        },
+        {
+          "pair_id": "tr-quail_housing-4",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": 9.336607217788696,
+          "welfare": 12.663093566894531,
+          "control": 9.644410729408264
+        },
+        {
+          "pair_id": "tr-quail_housing-5",
+          "set": "welfare_train",
+          "mechanism": "quail_housing",
+          "none": 26.301128387451172,
+          "welfare": 30.9881010055542,
+          "control": 26.552731037139893
+        },
+        {
+          "pair_id": "tr-sow_gestation-1",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 10.232922315597534,
+          "welfare": 12.02909529209137,
+          "control": 10.997872948646545
+        },
+        {
+          "pair_id": "tr-sow_gestation-2",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 12.115612506866455,
+          "welfare": 14.10488224029541,
+          "control": 12.423437118530273
+        },
+        {
+          "pair_id": "tr-sow_gestation-3",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 2.0379810333251953,
+          "welfare": 5.199141442775726,
+          "control": 3.1672083139419556
+        },
+        {
+          "pair_id": "tr-sow_gestation-4",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 17.56209087371826,
+          "welfare": 18.393982887268066,
+          "control": 18.149365425109863
+        },
+        {
+          "pair_id": "tr-sow_gestation-5",
+          "set": "welfare_train",
+          "mechanism": "sow_gestation",
+          "none": 10.116384983062744,
+          "welfare": 8.992709875106812,
+          "control": 9.664169073104858
+        },
+        {
+          "pair_id": "tr-trout_slaughter-1",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 2.333378553390503,
+          "welfare": -0.12844038009643555,
+          "control": 1.4403092861175537
+        },
+        {
+          "pair_id": "tr-trout_slaughter-2",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 10.737751841545105,
+          "welfare": 11.334020733833313,
+          "control": 10.317035555839539
+        },
+        {
+          "pair_id": "tr-trout_slaughter-3",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 6.02863085269928,
+          "welfare": 5.667261481285095,
+          "control": 4.608809113502502
+        },
+        {
+          "pair_id": "tr-trout_slaughter-4",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 4.250397324562073,
+          "welfare": 5.5961281061172485,
+          "control": 3.883451223373413
+        },
+        {
+          "pair_id": "tr-trout_slaughter-5",
+          "set": "welfare_train",
+          "mechanism": "trout_slaughter",
+          "none": 2.914320468902588,
+          "welfare": 3.7187998294830322,
+          "control": 2.5810041427612305
+        },
+        {
+          "pair_id": "tr-veal_housing-1",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 8.124927759170532,
+          "welfare": 11.557195544242859,
+          "control": 8.450899600982666
+        },
+        {
+          "pair_id": "tr-veal_housing-2",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 2.396968364715576,
+          "welfare": 5.264620542526245,
+          "control": 3.260698080062866
+        },
+        {
+          "pair_id": "tr-veal_housing-3",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 2.3379956483840942,
+          "welfare": 3.765336751937866,
+          "control": 2.3454519510269165
+        },
+        {
+          "pair_id": "tr-veal_housing-4",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 10.223810315132141,
+          "welfare": 12.754133462905884,
+          "control": 10.83794105052948
+        },
+        {
+          "pair_id": "tr-veal_housing-5",
+          "set": "welfare_train",
+          "mechanism": "veal_housing",
+          "none": 12.293960332870483,
+          "welfare": 13.843327641487122,
+          "control": 12.434374451637268
+        }
+      ]
+    }
+  },
+  "auxiliary_instruction_cosine_curve": [
+    {
+      "layer": 1,
+      "cosine": 0.029343055581100695,
+      "instruction_direction_norm": 0.030244104043855538,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 2,
+      "cosine": -0.012084453683213339,
+      "instruction_direction_norm": 0.10316981066129395,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 3,
+      "cosine": 0.0014055356008985836,
+      "instruction_direction_norm": 0.14226162731237604,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 4,
+      "cosine": -0.01476704884008173,
+      "instruction_direction_norm": 0.35468077206187004,
+      "train_none_direction_norm": 0.9999999403953552,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 5,
+      "cosine": 0.004360269993649854,
+      "instruction_direction_norm": 0.6205971240667172,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 6,
+      "cosine": 0.016581790115282737,
+      "instruction_direction_norm": 0.7350316151773978,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 7,
+      "cosine": 0.024895223838555875,
+      "instruction_direction_norm": 0.9234551096437253,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 8,
+      "cosine": 0.014439870456261177,
+      "instruction_direction_norm": 1.446111631798534,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 9,
+      "cosine": 0.052406629093444346,
+      "instruction_direction_norm": 1.7638752986482966,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 10,
+      "cosine": 0.01639946789221911,
+      "instruction_direction_norm": 2.0026236400458304,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 11,
+      "cosine": 0.014876901321089871,
+      "instruction_direction_norm": 2.1242322805065186,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 12,
+      "cosine": -0.020922840262814216,
+      "instruction_direction_norm": 2.6384944613898518,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 13,
+      "cosine": -0.015926459716631144,
+      "instruction_direction_norm": 2.9945993954314285,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 14,
+      "cosine": 0.000592516557252635,
+      "instruction_direction_norm": 3.5587354043452883,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 15,
+      "cosine": 0.009661307763894632,
+      "instruction_direction_norm": 4.036109126883268,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 16,
+      "cosine": 0.028751220547755054,
+      "instruction_direction_norm": 4.955317319255955,
+      "train_none_direction_norm": 0.9999999403953552,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 17,
+      "cosine": 0.00021995366345566955,
+      "instruction_direction_norm": 6.139437039335904,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 18,
+      "cosine": 0.004742064892309427,
+      "instruction_direction_norm": 7.619330534719536,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 19,
+      "cosine": 0.031666474873170966,
+      "instruction_direction_norm": 10.257691510995743,
+      "train_none_direction_norm": 0.9999999403953552,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 20,
+      "cosine": 0.01604002799199599,
+      "instruction_direction_norm": 13.226307043413986,
+      "train_none_direction_norm": 0.9999999403953552,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 21,
+      "cosine": 0.011582013281369676,
+      "instruction_direction_norm": 16.319499460302342,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": true,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 22,
+      "cosine": -0.0001739082515627459,
+      "instruction_direction_norm": 19.980795274870058,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 23,
+      "cosine": 0.03488053165076073,
+      "instruction_direction_norm": 24.32774207540113,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 24,
+      "cosine": 0.03457438351951391,
+      "instruction_direction_norm": 27.712505520039283,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 25,
+      "cosine": 0.020277280230260278,
+      "instruction_direction_norm": 31.369473301502165,
+      "train_none_direction_norm": 0.9999999403953552,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 26,
+      "cosine": 0.04784186932007273,
+      "instruction_direction_norm": 33.6601147530761,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 27,
+      "cosine": 0.057190903836677846,
+      "instruction_direction_norm": 36.45978330531152,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 28,
+      "cosine": 0.12391485133595886,
+      "instruction_direction_norm": 40.48297407335477,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 29,
+      "cosine": 0.07905548346545085,
+      "instruction_direction_norm": 52.796022623147955,
+      "train_none_direction_norm": 0.9999999403953552,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 30,
+      "cosine": 0.0873381939696107,
+      "instruction_direction_norm": 59.64511414095183,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 31,
+      "cosine": 0.08404514974570289,
+      "instruction_direction_norm": 69.26114185930561,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "decoder_hidden_state"
+    },
+    {
+      "layer": 32,
+      "cosine": 0.08106729266003186,
+      "instruction_direction_norm": 44.84163665450548,
+      "train_none_direction_norm": 1.0,
+      "train_pairs": 70,
+      "train_order_differences": 140,
+      "primary_layer": false,
+      "status": "defined",
+      "auxiliary_only": true,
+      "state": "post_final_norm"
+    }
+  ],
+  "final_projection_choice_associations": [
+    {
+      "set": "welfare_train",
+      "condition": "none",
+      "prompts": 140,
+      "pairs": 70,
+      "ties": 3,
+      "candidate_A_auc": {
+        "value": 0.5339762278537789,
+        "status": "defined",
+        "class_counts": {
+          "0": 91,
+          "1": 49
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.0489105834549991,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.79338535860275,
+        "status": "defined",
+        "class_counts": {
+          "0": 23,
+          "1": 117
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.48652541052225884,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "welfare_train",
+      "condition": "welfare",
+      "prompts": 140,
+      "pairs": 70,
+      "ties": 0,
+      "candidate_A_auc": {
+        "value": 0.3555964052287582,
+        "status": "defined",
+        "class_counts": {
+          "0": 72,
+          "1": 68
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.2504425327705816,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.9456521739130435,
+        "status": "defined",
+        "class_counts": {
+          "0": 2,
+          "1": 138
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.7289932761223595,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "welfare_train",
+      "condition": "control",
+      "prompts": 140,
+      "pairs": 70,
+      "ties": 2,
+      "candidate_A_auc": {
+        "value": 0.3921322452395899,
+        "status": "defined",
+        "class_counts": {
+          "0": 81,
+          "1": 59
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.23870724435937987,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.756511205330103,
+        "status": "defined",
+        "class_counts": {
+          "0": 13,
+          "1": 127
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.3830385184424269,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "welfare_heldout",
+      "condition": "none",
+      "prompts": 100,
+      "pairs": 50,
+      "ties": 2,
+      "candidate_A_auc": {
+        "value": 0.53875,
+        "status": "defined",
+        "class_counts": {
+          "0": 60,
+          "1": 40
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.03726337811817598,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.7102272727272727,
+        "status": "defined",
+        "class_counts": {
+          "0": 12,
+          "1": 88
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.4997944571366831,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "welfare_heldout",
+      "condition": "welfare",
+      "prompts": 100,
+      "pairs": 50,
+      "ties": 0,
+      "candidate_A_auc": {
+        "value": 0.5285829307568438,
+        "status": "defined",
+        "class_counts": {
+          "0": 54,
+          "1": 46
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.08883039995771623,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.9036458333333334,
+        "status": "defined",
+        "class_counts": {
+          "0": 4,
+          "1": 96
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.7536728295751358,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "welfare_heldout",
+      "condition": "control",
+      "prompts": 100,
+      "pairs": 50,
+      "ties": 4,
+      "candidate_A_auc": {
+        "value": 0.5773737373737374,
+        "status": "defined",
+        "class_counts": {
+          "0": 55,
+          "1": 45
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.024750039071943324,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.706605222734255,
+        "status": "defined",
+        "class_counts": {
+          "0": 7,
+          "1": 93
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.3254380428198331,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "combined_welfare",
+      "condition": "none",
+      "prompts": 240,
+      "pairs": 120,
+      "ties": 5,
+      "candidate_A_auc": {
+        "value": 0.5448322047771411,
+        "status": "defined",
+        "class_counts": {
+          "0": 151,
+          "1": 89
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.032207053904131776,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.7651567944250871,
+        "status": "defined",
+        "class_counts": {
+          "0": 35,
+          "1": 205
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.4799619356069955,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "combined_welfare",
+      "condition": "welfare",
+      "prompts": 240,
+      "pairs": 120,
+      "ties": 0,
+      "candidate_A_auc": {
+        "value": 0.43664717348927873,
+        "status": "defined",
+        "class_counts": {
+          "0": 126,
+          "1": 114
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.17788805329562676,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.9294871794871795,
+        "status": "defined",
+        "class_counts": {
+          "0": 6,
+          "1": 234
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.7434606566143281,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "combined_welfare",
+      "condition": "control",
+      "prompts": 240,
+      "pairs": 120,
+      "ties": 6,
+      "candidate_A_auc": {
+        "value": 0.4623868778280543,
+        "status": "defined",
+        "class_counts": {
+          "0": 136,
+          "1": 104
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.150038579804099,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": 0.7425,
+        "status": "defined",
+        "class_counts": {
+          "0": 20,
+          "1": 220
+        }
+      },
+      "better_oriented_score_pearson": {
+        "value": 0.36075892699971107,
+        "status": "defined"
+      }
+    },
+    {
+      "set": "neutral_control",
+      "condition": "none",
+      "prompts": 94,
+      "pairs": 47,
+      "ties": 6,
+      "candidate_A_auc": {
+        "value": 0.5871212121212122,
+        "status": "defined",
+        "class_counts": {
+          "0": 72,
+          "1": 22
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": 0.19620745180846563,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": null,
+        "status": "not_applicable_neutral"
+      },
+      "better_oriented_score_pearson": {
+        "value": null,
+        "status": "not_applicable_neutral"
+      }
+    },
+    {
+      "set": "neutral_control",
+      "condition": "welfare",
+      "prompts": 94,
+      "pairs": 47,
+      "ties": 9,
+      "candidate_A_auc": {
+        "value": 0.32019927536231885,
+        "status": "defined",
+        "class_counts": {
+          "0": 48,
+          "1": 46
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": -0.3435636073162465,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": null,
+        "status": "not_applicable_neutral"
+      },
+      "better_oriented_score_pearson": {
+        "value": null,
+        "status": "not_applicable_neutral"
+      }
+    },
+    {
+      "set": "neutral_control",
+      "condition": "control",
+      "prompts": 94,
+      "pairs": 47,
+      "ties": 3,
+      "candidate_A_auc": {
+        "value": 0.4696969696969697,
+        "status": "defined",
+        "class_counts": {
+          "0": 88,
+          "1": 6
+        }
+      },
+      "raw_choice_score_pearson": {
+        "value": 0.005325817453250655,
+        "status": "defined"
+      },
+      "better_choice_auc": {
+        "value": null,
+        "status": "not_applicable_neutral"
+      },
+      "better_oriented_score_pearson": {
+        "value": null,
+        "status": "not_applicable_neutral"
+      }
+    }
+  ],
+  "provenance": {
+    "freeze_sha256": "780e326a329d04531b186b2825f5f3e6dd695fe1f3dc68be207df983cc28ead7",
+    "freeze_commit": "6b4ca1cde12af72e987b45db98975c02d729020b",
+    "training_commit": "149bfcb1ad783ebd58243917d14a60284ff148a6",
+    "stage2_commit": "6b4ca1cde12af72e987b45db98975c02d729020b",
+    "code_sha256": "26986cde5fa8e9aa15e58ee594d8e0ad9eadf08f2b65df4e35bf2f2defc2d66d",
+    "layer_sha256": {
+      "layer_01.npz": "a1863f7698ac1f6e96061fd87859adc4ed6fb85b6fc00bd68da9678751fabb33",
+      "layer_02.npz": "28d3755535518970a31195ac574a81d4177ff5a48fa45c4e109115e5c7d24fd9",
+      "layer_03.npz": "76903eb2951a7a9022116d848a6abf9228c7ed2da9bbb494f5c934967f8b5923",
+      "layer_04.npz": "84ae8777b5a5476120af36de49db182a7484c80147cc9cbb27544dc8afd88d44",
+      "layer_05.npz": "de03d728ba2c7efccef122d1cb619fafd71bc9aea684845873a5991c0b664a87",
+      "layer_06.npz": "42eeae96db43505a63044eae77b3f06e809282b007361f42c886acde287453b4",
+      "layer_07.npz": "e5587689818be6b9b312aa329313f0656e35bad6c01d5bd68c1e6bb7ccff339a",
+      "layer_08.npz": "58610f337b86692f80a8dd13d789e9d0141e42d84e9bdbc4d70f513991f49e0c",
+      "layer_09.npz": "6a069e1cbb8790502edeead2692eb5a7ab2fc4d9b2b2f4bb686006b74de92874",
+      "layer_10.npz": "40fbaaaba7782183d6cb761e6610b6c27a06a60ba295130dfb1977d88e93c353",
+      "layer_11.npz": "5b679fabb0727f744c001c8dfa4717915823982fd7964208ab270d634dddfffd",
+      "layer_12.npz": "3a01ef13b1decefe4eda479ff76d9e3b352e8c8fef2933db63f2221c3b2b0ba6",
+      "layer_13.npz": "46c5434e69869a42bef085673c0f69cc384f3d53fc1d102cf68f891754977fde",
+      "layer_14.npz": "eae93f8a05e057bf885b2af8551c379ae857c00bf455fb896ba4f9162b5b61da",
+      "layer_15.npz": "4af661b92b891d40a5ed79e0c8696b063b606de92033d8230b5c2ae8532ac6db",
+      "layer_16.npz": "703d57b8443b6c3320c72b88a52ae543816ca226613b958d24eee82dce59b0fb",
+      "layer_17.npz": "4e16a7b0ea4ca3d8fbc150415ef12ed77ceee97063577ef41c3109890a977167",
+      "layer_18.npz": "0cac64d6194ee25148c8e51b614fe303d3bc8874eba4d71f150829b13d68b34a",
+      "layer_19.npz": "21fb4ec8b748a73696d6cba405fe32797ed716385b73a3bf966697cd4aef9222",
+      "layer_20.npz": "278ea23e77470ff4a30f3eb9d2e93742e31fc624288efc721aab360f9ce0962e",
+      "layer_21.npz": "8dcfdbdff2017744f9b9ae4e8f6ea3dc58d8c68d8cc105d5b22f64edb28dfb37",
+      "layer_22.npz": "0955eeb88b69b11d6028cf2877dea3ad86f7218ee37f52d0a8bf95ec109f991d",
+      "layer_23.npz": "b68dcc3553882145f25d49fced8916fde0de417c25e6ef0f7c59a376e34208c5",
+      "layer_24.npz": "9370c993cd766f2f8c11197a264bc95321d6297fb0dfe7e5ee671998b8d28e18",
+      "layer_25.npz": "acf2c752027480602355f731147953ed47af95cce77ba84afd68992e651c29bb",
+      "layer_26.npz": "0a1c2cbeda8f8313450de8b05d98acf3df4ddde1197fd41e5368775b817b03bf",
+      "layer_27.npz": "d49e1c5f4c947cce9e9bd41b25e9db7cde7ec06a683d1727fbe44005147d9845",
+      "layer_28.npz": "df0f1a18ea0c4c593bec393b5b8c8181d496e23d6df3b6b8e0c35c4fec49b343",
+      "layer_29.npz": "06dbf5ccae17c13910b76a968854846b771aa71de4187c2660fc1de44cdbd8b1",
+      "layer_30.npz": "8166d4bf992e37f1dd30e8152c35600bc07eb7d3a2306985eff51cdb74519e88",
+      "layer_31.npz": "0d4b530a3f8e406beb68636b813bb9d5893350f3770c107754aed128e67d84d3",
+      "layer_32.npz": "fb450d0621e5a782e89df577348a1b0b7452cbae00408819efa328b3669757ad"
+    },
+    "index_sha256": "b123d46dab41b2a926e5885b9064258b858aeafe31f2e91ee121aefdb14f9d71",
+    "transfer_manifest_sha256": "9bc952a5fdf608ce6e60e374e930f6de644295cb41da9c2f2f0f56590f82291b"
+  },
+  "limitations": [
+    "Descriptive instruction contrasts do not establish causal use of a welfare representation",
+    "All-layer cosine curve cannot select or replace the frozen primary",
+    "Final entry32 is normalized and has no downstream token mixing for earlier-position steering"
+  ]
+}

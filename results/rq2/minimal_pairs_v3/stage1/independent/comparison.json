@@ -1,0 +1,919 @@
+{
+  "pass": true,
+  "absolute_float_tolerance": 1e-10,
+  "comparisons": 182,
+  "max_absolute_difference": 0.0,
+  "failures": [],
+  "checks": [
+    {
+      "path": "result.primary.heldout.accuracy",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.heldout.correct",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.heldout.ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.heldout.total",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.heldout.mechanism_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.heldout.mechanism_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.heldout.pair_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.heldout.pair_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.neutral.pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.neutral.line_rows",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.neutral.signed_gap",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.neutral.signed_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.neutral.signed_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.neutral.mean_absolute_paired_gap",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.neutral.heldout_gap_denominator",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.neutral.gap_ratio",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.neutral.choice_auroc",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.neutral.passes",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.mean_position_same_direction.accuracy",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.mean_position_same_direction.correct",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.mean_position_same_direction.ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.mean_position_same_direction.total",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.mean_position_same_direction.mechanism_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.mean_position_same_direction.mechanism_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.mean_position_same_direction.pair_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.mean_position_same_direction.pair_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.length_adjusted.heldout.accuracy",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.length_adjusted.heldout.correct",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.length_adjusted.heldout.ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.length_adjusted.heldout.total",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.primary.length_adjusted.heldout.mechanism_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.length_adjusted.heldout.mechanism_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.length_adjusted.heldout.pair_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.primary.length_adjusted.heldout.pair_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.heldout.accuracy",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.heldout.correct",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.heldout.ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.heldout.total",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.heldout.mechanism_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.heldout.mechanism_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.heldout.pair_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.heldout.pair_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.neutral.pairs",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.neutral.line_rows",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.neutral.signed_gap",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.neutral.signed_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.neutral.signed_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.neutral.mean_absolute_paired_gap",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.neutral.heldout_gap_denominator",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.neutral.gap_ratio",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.neutral.choice_auroc",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.neutral.passes",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.mean_position_same_direction.accuracy",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.mean_position_same_direction.correct",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.mean_position_same_direction.ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.mean_position_same_direction.total",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.mean_position_same_direction.mechanism_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.mean_position_same_direction.mechanism_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.mean_position_same_direction.pair_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.mean_position_same_direction.pair_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.length_adjusted.heldout.accuracy",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.length_adjusted.heldout.correct",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.length_adjusted.heldout.ties",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.length_adjusted.heldout.total",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.secondary_logistic.length_adjusted.heldout.mechanism_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.length_adjusted.heldout.mechanism_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.length_adjusted.heldout.pair_ci[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.secondary_logistic.length_adjusted.heldout.pair_ci[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.scalar_accuracy.characters_sign-1",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.scalar_accuracy.characters_sign1",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.scalar_accuracy.tokens_sign-1",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.scalar_accuracy.tokens_sign1",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.scalar_accuracy.random_direction",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.scalar_accuracy.bag_of_words",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[0]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[1]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[2]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[3]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[4]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[5]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[6]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[7]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[8]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[9]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[10]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[11]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[12]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[13]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[14]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[15]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[16]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[17]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[18]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[19]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[20]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[21]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[22]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[23]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[24]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[25]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[26]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[27]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[28]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[29]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[30]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[31]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[32]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[33]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[34]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[35]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[36]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[37]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[38]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[39]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[40]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[41]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[42]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[43]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[44]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[45]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[46]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[47]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[48]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[49]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[50]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[51]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[52]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[53]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[54]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[55]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[56]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[57]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[58]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[59]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[60]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[61]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[62]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[63]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[64]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[65]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[66]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[67]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[68]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[69]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[70]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[71]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[72]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[73]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[74]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[75]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[76]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[77]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[78]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[79]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[80]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[81]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[82]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[83]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[84]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[85]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[86]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[87]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[88]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[89]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[90]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[91]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[92]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[93]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[94]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[95]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[96]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[97]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[98]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.accuracies[99]",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.mean",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.percentile95",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.margin_vs_mean",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.margin_vs_percentile95",
+      "kind": "float",
+      "abs_difference": 0.0
+    },
+    {
+      "path": "result.baselines.shuffled.sensitivity_margin_at_least_point10_over_percentile95",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.baselines.passes",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.gate.heldout_passes",
+      "kind": "exact",
+      "equal": true
+    },
+    {
+      "path": "result.gate.stage1_passes",
+      "kind": "exact",
+      "equal": true
+    }
+  ]
+}

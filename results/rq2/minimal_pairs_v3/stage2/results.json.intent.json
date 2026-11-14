@@ -1,0 +1,5 @@
+{
+  "stage2_commit": "6b4ca1cde12af72e987b45db98975c02d729020b",
+  "freeze_sha256": "780e326a329d04531b186b2825f5f3e6dd695fe1f3dc68be207df983cc28ead7",
+  "policy": "one authorized analysis; interrupted intent requires inspection, no automatic rerun"
+}

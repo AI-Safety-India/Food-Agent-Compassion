@@ -1,0 +1,252 @@
+{
+  "primary": {
+    "heldout": {
+      "accuracy": 0.81,
+      "correct": 81,
+      "ties": 0,
+      "total": 100,
+      "mechanism_ci": [
+        0.67,
+        0.93
+      ],
+      "pair_ci": [
+        0.71,
+        0.9
+      ]
+    },
+    "neutral": {
+      "pairs": 47,
+      "line_rows": 188,
+      "signed_gap": 0.22746140652514518,
+      "signed_ci": [
+        -0.2994957770438904,
+        0.6916191766870781
+      ],
+      "mean_absolute_paired_gap": 1.0631029326865014,
+      "heldout_gap_denominator": 5.386277793645859,
+      "gap_ratio": 0.19737246637012185,
+      "choice_auroc": 0.47487550928021727,
+      "passes": true
+    },
+    "mean_position_same_direction": {
+      "accuracy": 0.88,
+      "correct": 88,
+      "ties": 0,
+      "total": 100,
+      "mechanism_ci": [
+        0.79,
+        0.96
+      ],
+      "pair_ci": [
+        0.82,
+        0.94
+      ]
+    },
+    "length_adjusted": {
+      "heldout": {
+        "accuracy": 0.81,
+        "correct": 81,
+        "ties": 0,
+        "total": 100,
+        "mechanism_ci": [
+          0.67,
+          0.93
+        ],
+        "pair_ci": [
+          0.71,
+          0.9
+        ]
+      }
+    }
+  },
+  "secondary_logistic": {
+    "heldout": {
+      "accuracy": 0.91,
+      "correct": 91,
+      "ties": 0,
+      "total": 100,
+      "mechanism_ci": [
+        0.84,
+        0.97
+      ],
+      "pair_ci": [
+        0.85,
+        0.96
+      ]
+    },
+    "neutral": {
+      "pairs": 47,
+      "line_rows": 188,
+      "signed_gap": 0.5257455722560744,
+      "signed_ci": [
+        -0.2102801345083895,
+        1.3511711314679702
+      ],
+      "mean_absolute_paired_gap": 1.784628265448332,
+      "heldout_gap_denominator": 9.017136521636727,
+      "gap_ratio": 0.1979151875061551,
+      "choice_auroc": 0.5218424626527841,
+      "passes": true
+    },
+    "mean_position_same_direction": {
+      "accuracy": 0.83,
+      "correct": 83,
+      "ties": 0,
+      "total": 100,
+      "mechanism_ci": [
+        0.76,
+        0.9
+      ],
+      "pair_ci": [
+        0.76,
+        0.89
+      ]
+    },
+    "length_adjusted": {
+      "heldout": {
+        "accuracy": 0.9,
+        "correct": 90,
+        "ties": 0,
+        "total": 100,
+        "mechanism_ci": [
+          0.83,
+          0.97
+        ],
+        "pair_ci": [
+          0.83,
+          0.96
+        ]
+      }
+    }
+  },
+  "baselines": {
+    "scalar_accuracy": {
+      "characters_sign-1": 0.48,
+      "characters_sign1": 0.52,
+      "tokens_sign-1": 0.55,
+      "tokens_sign1": 0.45,
+      "random_direction": 0.37,
+      "bag_of_words": 0.44
+    },
+    "shuffled": {
+      "accuracies": [
+        0.43,
+        0.51,
+        0.61,
+        0.39,
+        0.41,
+        0.72,
+        0.58,
+        0.59,
+        0.49,
+        0.68,
+        0.43,
+        0.61,
+        0.7,
+        0.57,
+        0.54,
+        0.59,
+        0.62,
+        0.49,
+        0.49,
+        0.28,
+        0.49,
+        0.62,
+        0.66,
+        0.4,
+        0.51,
+        0.55,
+        0.59,
+        0.55,
+        0.71,
+        0.33,
+        0.57,
+        0.49,
+        0.33,
+        0.61,
+        0.69,
+        0.55,
+        0.46,
+        0.56,
+        0.59,
+        0.62,
+        0.37,
+        0.69,
+        0.34,
+        0.63,
+        0.48,
+        0.32,
+        0.49,
+        0.36,
+        0.55,
+        0.39,
+        0.65,
+        0.38,
+        0.49,
+        0.66,
+        0.39,
+        0.27,
+        0.33,
+        0.48,
+        0.53,
+        0.5,
+        0.6,
+        0.33,
+        0.65,
+        0.42,
+        0.42,
+        0.68,
+        0.46,
+        0.78,
+        0.42,
+        0.45,
+        0.31,
+        0.36,
+        0.59,
+        0.59,
+        0.53,
+        0.44,
+        0.34,
+        0.36,
+        0.41,
+        0.48,
+        0.59,
+        0.58,
+        0.55,
+        0.77,
+        0.28,
+        0.36,
+        0.49,
+        0.22,
+        0.65,
+        0.33,
+        0.73,
+        0.61,
+        0.61,
+        0.51,
+        0.6,
+        0.4,
+        0.56,
+        0.28,
+        0.38,
+        0.51
+      ],
+      "mean": 0.5054000000000001,
+      "percentile95": 0.7004999999999999,
+      "margin_vs_mean": 0.3046,
+      "margin_vs_percentile95": 0.10950000000000015,
+      "sensitivity_margin_at_least_point10_over_percentile95": true
+    },
+    "passes": true
+  },
+  "gate": {
+    "heldout_passes": true,
+    "stage1_passes": true
+  },
+  "provenance": {
+    "freeze_sha": "780e326a329d04531b186b2825f5f3e6dd695fe1f3dc68be207df983cc28ead7",
+    "freeze_commit": "6b4ca1cde12af72e987b45db98975c02d729020b",
+    "code_sha": "029708c7d745eccfb258feebf4ba6476086cb30c8611d3b32fc86dbc3d52f05f",
+    "implementation": "independent; no primary imports"
+  }
+}

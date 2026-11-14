@@ -1,0 +1,6 @@
+{
+  "freeze_sha256": "780e326a329d04531b186b2825f5f3e6dd695fe1f3dc68be207df983cc28ead7",
+  "evaluation_commit": "149bfcb1ad783ebd58243917d14a60284ff148a6",
+  "output": "results\\rq2\\minimal_pairs_v3\\stage1\\results.json",
+  "policy": "No automatic rerun after this intent; preserve failure evidence"
+}
