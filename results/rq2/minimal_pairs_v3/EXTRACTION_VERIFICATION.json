@@ -1,0 +1,307 @@
+{
+  "status": "PASS",
+  "downloaded_files": 81,
+  "downloaded_bytes": 1322241066,
+  "layers": [
+    {
+      "layer": 1,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 2,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 3,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 4,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 5,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 6,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 7,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 8,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 9,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 10,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 11,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 12,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 13,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 14,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 15,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 16,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 17,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 18,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 19,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 20,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 21,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 22,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 23,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 24,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 25,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 26,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 27,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 28,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 29,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 30,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 31,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    },
+    {
+      "layer": 32,
+      "shape": [
+        1002,
+        5,
+        4096
+      ],
+      "dtype": "float16"
+    }
+  ],
+  "prompts": 1002,
+  "integrity_rechecks": 20,
+  "correlation": 1.0,
+  "choices_identical": true,
+  "main_attempts": 1002,
+  "calibration_three_token_diagnostics": 30,
+  "planned_total_forwards": 1082,
+  "provenance_shard_text_files_verified": 3006,
+  "weight_loading_warning_lines": [],
+  "training_only_rows": 140,
+  "heldout_or_neutral_activation_values_opened": false,
+  "duplicate_sharded_activation_arrays": "retained remotely; hashes in COMPLETE; consolidated32arrays downloaded"
+}

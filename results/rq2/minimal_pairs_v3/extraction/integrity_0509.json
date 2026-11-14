@@ -1,0 +1,19 @@
+{
+  "row": 509,
+  "original": [
+    22.75,
+    22.0,
+    6.75,
+    16.5,
+    15.5
+  ],
+  "recomputed": [
+    22.75,
+    22.0,
+    6.75,
+    16.5,
+    15.5
+  ],
+  "same_greedy": true,
+  "same_choice": true
+}

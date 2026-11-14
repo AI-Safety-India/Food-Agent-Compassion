@@ -2,3 +2,7 @@ extraction/**/*.npz
 extraction/shards/
 extraction/*.lock
 model_cache/
+transfer_private/
+extraction/**/*.partial*
+export/*.zip*
+train_inputs/shards/

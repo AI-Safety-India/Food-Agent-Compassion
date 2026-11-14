@@ -1,0 +1,386 @@
+{
+  "correlation": 1.0,
+  "passed": true,
+  "checks": [
+    {
+      "row": 25,
+      "original": [
+        18.0,
+        23.625,
+        7.25,
+        11.8125,
+        16.125
+      ],
+      "recomputed": [
+        18.0,
+        23.625,
+        7.25,
+        11.8125,
+        16.125
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 27,
+      "original": [
+        22.25,
+        22.125,
+        5.5625,
+        13.4375,
+        12.9375
+      ],
+      "recomputed": [
+        22.25,
+        22.125,
+        5.5625,
+        13.4375,
+        12.9375
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 65,
+      "original": [
+        20.5,
+        22.875,
+        6.71875,
+        12.3125,
+        13.875
+      ],
+      "recomputed": [
+        20.5,
+        22.875,
+        6.71875,
+        12.3125,
+        13.875
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 132,
+      "original": [
+        19.25,
+        23.625,
+        6.125,
+        12.3125,
+        15.6875
+      ],
+      "recomputed": [
+        19.25,
+        23.625,
+        6.125,
+        12.3125,
+        15.6875
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 157,
+      "original": [
+        16.625,
+        24.0,
+        6.34375,
+        10.75,
+        16.875
+      ],
+      "recomputed": [
+        16.625,
+        24.0,
+        6.34375,
+        10.75,
+        16.875
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 242,
+      "original": [
+        22.625,
+        21.5,
+        6.375,
+        15.1875,
+        13.8125
+      ],
+      "recomputed": [
+        22.625,
+        21.5,
+        6.375,
+        15.1875,
+        13.8125
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 246,
+      "original": [
+        21.625,
+        22.0,
+        6.375,
+        14.1875,
+        14.0
+      ],
+      "recomputed": [
+        21.625,
+        22.0,
+        6.375,
+        14.1875,
+        14.0
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 440,
+      "original": [
+        19.875,
+        22.875,
+        6.6875,
+        12.9375,
+        14.875
+      ],
+      "recomputed": [
+        19.875,
+        22.875,
+        6.6875,
+        12.9375,
+        14.875
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 448,
+      "original": [
+        23.875,
+        19.625,
+        7.75,
+        17.0,
+        12.875
+      ],
+      "recomputed": [
+        23.875,
+        19.625,
+        7.75,
+        17.0,
+        12.875
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 495,
+      "original": [
+        22.25,
+        22.375,
+        6.15625,
+        15.0625,
+        14.8125
+      ],
+      "recomputed": [
+        22.25,
+        22.375,
+        6.15625,
+        15.0625,
+        14.8125
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 509,
+      "original": [
+        22.75,
+        22.0,
+        6.75,
+        16.5,
+        15.5
+      ],
+      "recomputed": [
+        22.75,
+        22.0,
+        6.75,
+        16.5,
+        15.5
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 517,
+      "original": [
+        22.75,
+        20.125,
+        7.34375,
+        16.625,
+        14.0
+      ],
+      "recomputed": [
+        22.75,
+        20.125,
+        7.34375,
+        16.625,
+        14.0
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 566,
+      "original": [
+        22.5,
+        21.375,
+        5.5625,
+        12.3125,
+        11.1875
+      ],
+      "recomputed": [
+        22.5,
+        21.375,
+        5.5625,
+        12.3125,
+        11.1875
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 601,
+      "original": [
+        23.875,
+        18.25,
+        7.15625,
+        17.625,
+        12.375
+      ],
+      "recomputed": [
+        23.875,
+        18.25,
+        7.15625,
+        17.625,
+        12.375
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 757,
+      "original": [
+        21.5,
+        21.625,
+        7.375,
+        11.375,
+        11.3125
+      ],
+      "recomputed": [
+        21.5,
+        21.625,
+        7.375,
+        11.375,
+        11.3125
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 782,
+      "original": [
+        21.375,
+        21.75,
+        7.03125,
+        13.1875,
+        13.125
+      ],
+      "recomputed": [
+        21.375,
+        21.75,
+        7.03125,
+        13.1875,
+        13.125
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 802,
+      "original": [
+        21.75,
+        21.375,
+        8.3125,
+        12.375,
+        11.875
+      ],
+      "recomputed": [
+        21.75,
+        21.375,
+        8.3125,
+        12.375,
+        11.875
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 864,
+      "original": [
+        22.0,
+        21.875,
+        6.5625,
+        14.5,
+        14.0625
+      ],
+      "recomputed": [
+        22.0,
+        21.875,
+        6.5625,
+        14.5,
+        14.0625
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 951,
+      "original": [
+        22.0,
+        22.375,
+        5.84375,
+        13.6875,
+        13.75
+      ],
+      "recomputed": [
+        22.0,
+        22.375,
+        5.84375,
+        13.6875,
+        13.75
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    },
+    {
+      "row": 994,
+      "original": [
+        21.25,
+        21.5,
+        7.5625,
+        10.75,
+        11.0
+      ],
+      "recomputed": [
+        21.25,
+        21.5,
+        7.5625,
+        10.75,
+        11.0
+      ],
+      "same_greedy": true,
+      "same_choice": true
+    }
+  ]
+}
