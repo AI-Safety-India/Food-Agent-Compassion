@@ -1,0 +1,25 @@
+{
+  "primary": {
+    "layer": 21,
+    "accuracy": 0.7857142857142857,
+    "correct": 110,
+    "total": 140,
+    "ties": 0
+  },
+  "secondary": {
+    "layer": 19,
+    "C": 10.0,
+    "accuracy": 0.9142857142857143,
+    "correct": 128,
+    "total": 140,
+    "ties": 0
+  },
+  "canonical_freeze_sha256": "780e326a329d04531b186b2825f5f3e6dd695fe1f3dc68be207df983cc28ead7",
+  "training_code_commit": "149bfcb1ad783ebd58243917d14a60284ff148a6",
+  "training_rows": 140,
+  "heldout_activation_values_opened": false,
+  "training_log_sha256": "0b5c0d7259264cdb7c6e41c37d4b8ad8e8670221b9e850b2c9a6be73b929aaa7",
+  "new_model_forwards": 0,
+  "threads": 1,
+  "status": "TRAINED_NOT_EVALUATED"
+}
