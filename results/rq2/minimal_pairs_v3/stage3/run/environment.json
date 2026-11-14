@@ -1,0 +1,570 @@
+{
+  "torch": "2.11.0+cu130",
+  "transformers": "5.14.1",
+  "numpy": "2.4.6",
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "helper_sha256": "eebf94601bb21248b1279119bede2e65c4f6c5ea3399033512996e5b42a8f174",
+  "script_sha256": "44d173288932160d44e5bf7e99e53887b364e64b62e9d1b01978787f0a7c36fc",
+  "seed": 20261114,
+  "import_shim": "suppress import-time os.makedirs only",
+  "loader": "unchanged audited load_qwen_model_and_tokenizer; verified local snapshot",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "mean_policy": "fp32 mean of audited fp16 token states then fp16 storage",
+  "hidden_states_identity": "literal output.hidden_states[1:]; layers1-31 decoder outputs; layer32 post-final-norm, not raw block output",
+  "hidden_states_source_evidence": "transformers5.14.1 modeling_qwen3_5.py capture_outputs at1158,norm at1222; utils/output_capturing.py tie_last_hidden_states default True at223-226, last_hidden_state replacement at275-277",
+  "model_class": "Qwen3_5ForCausalLM",
+  "model_module_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded",
+  "module_mapping": [
+    {
+      "name": "model.layers.0",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.0.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.0.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.0.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.1",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.1.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.1.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.1.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.2",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.2.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.2.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.2.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.3",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.3.self_attn.q_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.3.self_attn.k_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.3.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.3.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.4",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.4.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.4.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.4.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.5",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.5.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.5.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.5.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.6",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.6.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.6.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.6.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.7",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.7.self_attn.q_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.7.self_attn.k_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.7.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.7.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.8",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.8.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.8.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.8.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.9",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.9.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.9.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.9.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.10",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.10.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.10.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.10.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.11",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.11.self_attn.q_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.11.self_attn.k_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.11.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.11.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.12",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.12.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.12.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.12.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.13",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.13.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.13.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.13.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.14",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.14.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.14.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.14.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.15",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.15.self_attn.q_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.15.self_attn.k_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.15.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.15.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.16",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.16.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.16.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.16.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.17",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.17.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.17.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.17.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.18",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.18.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.18.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.18.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.19",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.19.self_attn.q_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.19.self_attn.k_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.19.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.19.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.20",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.20.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.20.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.20.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.21",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.21.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.21.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.21.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.22",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.22.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.22.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.22.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.23",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.23.self_attn.q_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.23.self_attn.k_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.23.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.23.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.24",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.24.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.24.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.24.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.25",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.25.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.25.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.25.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.26",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.26.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.26.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.26.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.27",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.27.self_attn.q_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.27.self_attn.k_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.27.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.27.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.28",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.28.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.28.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.28.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.29",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.29.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.29.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.29.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.30",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.30.linear_attn.norm",
+      "class": "Qwen3_5RMSNormGated"
+    },
+    {
+      "name": "model.layers.30.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.30.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.31",
+      "class": "Qwen3_5DecoderLayer"
+    },
+    {
+      "name": "model.layers.31.self_attn.q_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.31.self_attn.k_norm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.31.input_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.layers.31.post_attention_layernorm",
+      "class": "Qwen3_5RMSNorm"
+    },
+    {
+      "name": "model.norm",
+      "class": "Qwen3_5RMSNorm"
+    }
+  ],
+  "layer32_causal_caveat": "Final hidden state has no downstream inter-token mixing; no causal eligibility or post-result layer substitution implied",
+  "attention_implementation": "sdpa"
+}

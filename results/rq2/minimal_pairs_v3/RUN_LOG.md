@@ -54,3 +54,7 @@ Preregistration committed as 61577bd3941cbb5c6e21bc1fd8982d9e11220029 before mod
 ## 2026-11-14 — Stage 3 resumed on confirmed free runtime
 Frozen worker/plan/prereg uploaded in40verifiedfragments. Initial job26956 stopped at import before model loading: Molab safe_path omitted script directory, dependency was present. Preserved initial job. Supervisor_v2 adds explicit task PYTHONPATH; import-only test passed; new durable job27201 launched in celluJvb, jobs/stage3_retry1. Worker/scientificplan unchanged; no repeated modelcall. Analysis and independentchecker committed5b6b186;3synthetictests pass. Monitoring sanity then study. No paid/push/patching.
 
+
+## 2026-11-14 — Stage 3 complete; verified FAIL; stop
+All9208study+8engineeringforwards complete once; durable supervisorretry1 exit0. Sanity exactlogits/correlation1.0/isolatedhook PASS. Downloaded14files with byte/SHAverification. Analysis validated9216rawrecords,18432ledgerentries and exactjob/input/target/baselinebindings. Combined and held-out FAIL: nonmonotonic, +/-4CIs includezero, random ratios below3; neutralspecificity passes+4 only. Combined+4 change0.015901pp CI[-0.050414,0.084583],randomratio0.182659; heldout+4 change0.094681pp CI[-0.003795,0.192521],ratio1.087611. +/-2CIs also includezero. Independent14quantityrecomputePASS maxabsdiff4.336808689942018e-19. RESULTS.md andHANDOFFupdated. No newmodelpasses, paidresources, figures, patching,Stage5 orpush. Stop as requested.
+

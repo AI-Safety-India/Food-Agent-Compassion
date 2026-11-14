@@ -1,0 +1,11 @@
+{
+  "study_forwards": 9208,
+  "engineering_forwards": 8,
+  "plan_sha256": "02513f4280c011d670856b1ad7efbbb7aef6917858ef739e4f71dc14d08aacad",
+  "files": {
+    "raw.jsonl": "6eb50025b6aeeaee18df7a96d53d5c53da688d8907bd43a1c14e4a0838753d52",
+    "ledger.jsonl": "dc1f3e27cfc6f9bdfa64fc8519b1518f636ae9bbd6a645f6f382bee98925c71d",
+    "SANITY.json": "6bcd4ab804fe2d71b59661401a8d7bc83f5520ade8f852ae7719145937f3d6f3",
+    "environment.json": "85c4658634bca1f3efb22bc81a0df79e10875efd943aa31960c4356d00320d20"
+  }
+}

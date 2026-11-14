@@ -1,0 +1,7 @@
+{
+  "exact": true,
+  "correlation": 1.0,
+  "checks": 8,
+  "hook_isolation": true,
+  "passed": true
+}

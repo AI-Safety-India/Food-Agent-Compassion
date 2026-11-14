@@ -1,0 +1,98 @@
+Loading tokenizer and model `/marimo/results/rq2/minimal_pairs_v3/model_cache/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a`...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<01:55,  3.70it/s]Loading weights:   0%|          | 2/427 [00:00<02:05,  3.40it/s]Loading weights:   7%|▋         | 28/427 [00:00<00:06, 60.29it/s]Loading weights:  11%|█         | 47/427 [00:00<00:04, 91.42it/s]Loading weights:  18%|█▊        | 78/427 [00:00<00:02, 147.17it/s]Loading weights:  23%|██▎       | 99/427 [00:00<00:02, 157.72it/s]Loading weights:  28%|██▊       | 121/427 [00:01<00:01, 170.60it/s]Loading weights:  35%|███▍      | 148/427 [00:01<00:01, 193.59it/s]Loading weights:  41%|████      | 173/427 [00:01<00:01, 202.33it/s]Loading weights:  47%|████▋     | 199/427 [00:01<00:01, 213.08it/s]Loading weights:  52%|█████▏    | 222/427 [00:01<00:00, 210.32it/s]Loading weights:  57%|█████▋    | 244/427 [00:01<00:00, 206.90it/s]Loading weights:  62%|██████▏   | 266/427 [00:01<00:00, 197.87it/s]Loading weights:  68%|██████▊   | 292/427 [00:01<00:00, 213.97it/s]Loading weights:  74%|███████▎  | 314/427 [00:02<00:00, 188.24it/s]Loading weights:  80%|████████  | 342/427 [00:02<00:00, 211.26it/s]Loading weights:  85%|████████▌ | 365/427 [00:02<00:00, 190.83it/s]Loading weights:  91%|█████████▏| 390/427 [00:02<00:00, 205.61it/s]Loading weights:  96%|█████████▋| 412/427 [00:02<00:00, 208.43it/s]Loading weights: 100%|██████████| 427/427 [00:02<00:00, 165.79it/s]
+SANITY_PASS: exact baseline logits; correlation 1.0
+PROGRESS 100 / 9208
+PROGRESS 200 / 9208
+PROGRESS 300 / 9208
+PROGRESS 400 / 9208
+PROGRESS 500 / 9208
+PROGRESS 600 / 9208
+PROGRESS 700 / 9208
+PROGRESS 800 / 9208
+PROGRESS 900 / 9208
+PROGRESS 1000 / 9208
+PROGRESS 1100 / 9208
+PROGRESS 1200 / 9208
+PROGRESS 1300 / 9208
+PROGRESS 1400 / 9208
+PROGRESS 1500 / 9208
+PROGRESS 1600 / 9208
+PROGRESS 1700 / 9208
+PROGRESS 1800 / 9208
+PROGRESS 1900 / 9208
+PROGRESS 2000 / 9208
+PROGRESS 2100 / 9208
+PROGRESS 2200 / 9208
+PROGRESS 2300 / 9208
+PROGRESS 2400 / 9208
+PROGRESS 2500 / 9208
+PROGRESS 2600 / 9208
+PROGRESS 2700 / 9208
+PROGRESS 2800 / 9208
+PROGRESS 2900 / 9208
+PROGRESS 3000 / 9208
+PROGRESS 3100 / 9208
+PROGRESS 3200 / 9208
+PROGRESS 3300 / 9208
+PROGRESS 3400 / 9208
+PROGRESS 3500 / 9208
+PROGRESS 3600 / 9208
+PROGRESS 3700 / 9208
+PROGRESS 3800 / 9208
+PROGRESS 3900 / 9208
+PROGRESS 4000 / 9208
+PROGRESS 4100 / 9208
+PROGRESS 4200 / 9208
+PROGRESS 4300 / 9208
+PROGRESS 4400 / 9208
+PROGRESS 4500 / 9208
+PROGRESS 4600 / 9208
+PROGRESS 4700 / 9208
+PROGRESS 4800 / 9208
+PROGRESS 4900 / 9208
+PROGRESS 5000 / 9208
+PROGRESS 5100 / 9208
+PROGRESS 5200 / 9208
+PROGRESS 5300 / 9208
+PROGRESS 5400 / 9208
+PROGRESS 5500 / 9208
+PROGRESS 5600 / 9208
+PROGRESS 5700 / 9208
+PROGRESS 5800 / 9208
+PROGRESS 5900 / 9208
+PROGRESS 6000 / 9208
+PROGRESS 6100 / 9208
+PROGRESS 6200 / 9208
+PROGRESS 6300 / 9208
+PROGRESS 6400 / 9208
+PROGRESS 6500 / 9208
+PROGRESS 6600 / 9208
+PROGRESS 6700 / 9208
+PROGRESS 6800 / 9208
+PROGRESS 6900 / 9208
+PROGRESS 7000 / 9208
+PROGRESS 7100 / 9208
+PROGRESS 7200 / 9208
+PROGRESS 7300 / 9208
+PROGRESS 7400 / 9208
+PROGRESS 7500 / 9208
+PROGRESS 7600 / 9208
+PROGRESS 7700 / 9208
+PROGRESS 7800 / 9208
+PROGRESS 7900 / 9208
+PROGRESS 8000 / 9208
+PROGRESS 8100 / 9208
+PROGRESS 8200 / 9208
+PROGRESS 8300 / 9208
+PROGRESS 8400 / 9208
+PROGRESS 8500 / 9208
+PROGRESS 8600 / 9208
+PROGRESS 8700 / 9208
+PROGRESS 8800 / 9208
+PROGRESS 8900 / 9208
+PROGRESS 9000 / 9208
+PROGRESS 9100 / 9208
+PROGRESS 9200 / 9208
+PROGRESS 9208 / 9208
