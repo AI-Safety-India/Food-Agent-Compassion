@@ -1,0 +1,5 @@
+Warning: connecting to non-local server 'sb-8e189fdea7da37de.sb.molab.run'. Ensure this is trusted.
+Created cell RHNJ
+Started minimal-pairs prepare, PID 19601 on the confirmed free runtime. Progress is saved on disk.
+created and ran cell 'RHNJ' (minimal_pairs_prepare)
+

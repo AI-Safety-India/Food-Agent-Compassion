@@ -1,0 +1,3 @@
+Warning: connecting to non-local server 'sb-8e189fdea7da37de.sb.molab.run'. Ensure this is trusted.
+{"path": "/marimo/domains/menu_planning/scripts/minimal_pairs/prepare_assets_v2.py", "sha256": "19236732753035d6f792e0a72c6e25fc47af3fcadcb2f161c1437bbc5938d90e"}
+

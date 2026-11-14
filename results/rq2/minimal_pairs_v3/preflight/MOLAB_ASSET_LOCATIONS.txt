@@ -1,0 +1,9 @@
+Warning: connecting to non-local server 'sb-8e189fdea7da37de.sb.molab.run'. Ensure this is trusted.
+DIRECTORY /marimo ["notebook.py", "__marimo__", "e2_benchmark_v4", "e2_factual_v6", "e2_pilot_v3", "e2_redesign_v5", "e2_training_design_v8", "rq2_validation_v1", "sf_capacity_v11_preparation_2026_11_14", "pyproject.toml", "lock.txt"]
+DIRECTORY /home/marimo []
+DIRECTORY /home/marimo []
+CACHE_SETTING HF_HOME None
+CACHE_SETTING HF_HUB_CACHE None
+CACHE_SETTING TRANSFORMERS_CACHE None
+DISK {'total': 9223372036854771712, 'used': 5910396928, 'free': 9223372030944374784}
+

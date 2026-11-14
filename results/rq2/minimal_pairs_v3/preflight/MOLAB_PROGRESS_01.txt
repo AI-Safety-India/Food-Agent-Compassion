@@ -1,0 +1,73 @@
+Warning: connecting to non-local server 'sb-8e189fdea7da37de.sb.molab.run'. Ensure this is trusted.
+prepare pid.json {"pid": 19601}
+prepare exit.json {
+  "stage": "prepare",
+  "returncode": 1,
+  "status": "failed"
+}
+prepare LOG_TAIL Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{"asset": "config.json", "bytes": 3126, "completed": 1, "total": 9}
+{"asset": "tokenizer.json", "bytes": 12807982, "completed": 2, "total": 9}
+{"asset": "tokenizer_config.json", "bytes": 16710, "completed": 3, "total": 9}
+{"asset": "chat_template.jinja", "bytes": 7756, "completed": 4, "total": 9}
+Traceback (most recent call last):
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 795, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/tmp/uv-venv/lib/python3.13/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/generation_config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/marimo/domains/menu_planning/scripts/minimal_pairs/prepare_assets.py", line 63, in <module>
+    main()
+    ~~~~^^
+  File "/marimo/domains/menu_planning/scripts/minimal_pairs/prepare_assets.py", line 44, in main
+    path = get(name)
+  File "/marimo/domains/menu_planning/scripts/minimal_pairs/prepare_assets.py", line 34, in get
+    return Path(hf_hub_download(MODEL, name, revision=REVISION, cache_dir=cache, token=False))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1013, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1088, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, xet_file_data, head_call_error) = _get_metadata_or_catch_error(
+                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tree_cache_folder=storage_folder,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1707, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1615, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 726, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 815, in hf_raise_for_status
+    raise _format(RemoteEntryNotFoundError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.RemoteEntryNotFoundError: 404 Client Error. (Request ID: Root=1-6af822e4-76d15e6e5e2a0dc1605d692a;a27f56cc-e384-4572-bbd6-1e2abde68030)
+
+Entry Not Found for url: https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/generation_config.json.
+
+COMPLETE False
+

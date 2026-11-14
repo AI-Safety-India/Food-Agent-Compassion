@@ -1,0 +1,13 @@
+{
+  "preflight_commit": "1bd5463",
+  "user_free_confirmation": "Yes, this Molab runtime is explicitly free.",
+  "paid_authorized": false,
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "snapshot_manifest_sha256": "28e2c8eb290647b2965af1e0a3c01f1518eb1e922ccbd1ae8740e6e68af40a28",
+  "extraction_code_sha256": "44d173288932160d44e5bf7e99e53887b364e64b62e9d1b01978787f0a7c36fc",
+  "main_forwards": 1002,
+  "calibration_extra_forwards": 60,
+  "integrity_forwards": 20,
+  "original_results_untouched": true,
+  "reuse_original_audited_extractor": true
+}

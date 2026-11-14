@@ -1,0 +1,109 @@
+Warning: connecting to non-local server 'sb-8e189fdea7da37de.sb.molab.run'. Ensure this is trusted.
+prepare pid.json {"pid": 19601}
+prepare exit.json {
+  "stage": "prepare",
+  "returncode": 1,
+  "status": "failed"
+}
+prepare LOG_TAIL Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{"asset": "config.json", "bytes": 3126, "completed": 1, "total": 9}
+{"asset": "tokenizer.json", "bytes": 12807982, "completed": 2, "total": 9}
+{"asset": "tokenizer_config.json", "bytes": 16710, "completed": 3, "total": 9}
+{"asset": "chat_template.jinja", "bytes": 7756, "completed": 4, "total": 9}
+Traceback (most recent call last):
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 795, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/tmp/uv-venv/lib/python3.13/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/generation_config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/marimo/domains/menu_planning/scripts/minimal_pairs/prepare_assets.py", line 63, in <module>
+    main()
+    ~~~~^^
+  File "/marimo/domains/menu_planning/scripts/minimal_pairs/prepare_assets.py", line 44, in main
+    path = get(name)
+  File "/marimo/domains/menu_planning/scripts/minimal_pairs/prepare_assets.py", line 34, in get
+    return Path(hf_hub_download(MODEL, name, revision=REVISION, cache_dir=cache, token=False))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1013, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1088, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, xet_file_data, head_call_error) = _get_metadata_or_catch_error(
+                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tree_cache_folder=storage_folder,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1707, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1615, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 726, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/tmp/uv-venv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 815, in hf_raise_for_status
+    raise _format(RemoteEntryNotFoundError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.RemoteEntryNotFoundError: 404 Client Error. (Request ID: Root=1-6af822e4-76d15e6e5e2a0dc1605d692a;a27f56cc-e384-4572-bbd6-1e2abde68030)
+
+Entry Not Found for url: https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/generation_config.json.
+
+prepare2 pid.json {"pid": 19873}
+prepare2 exit.json {
+  "stage": "prepare2",
+  "returncode": 0,
+  "status": "complete"
+}
+prepare2 LOG_TAIL {"asset": "config.json", "bytes": 3126, "completed": 1, "total": 8}
+{"asset": "tokenizer.json", "bytes": 12807982, "completed": 2, "total": 8}
+{"asset": "tokenizer_config.json", "bytes": 16710, "completed": 3, "total": 8}
+{"asset": "chat_template.jinja", "bytes": 7756, "completed": 4, "total": 8}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{"asset": "model.safetensors-00001-of-00004.safetensors", "bytes": 5276436216, "completed": 5, "total": 8}
+{"asset": "model.safetensors-00002-of-00004.safetensors", "bytes": 5335161512, "completed": 6, "total": 8}
+{"asset": "model.safetensors-00003-of-00004.safetensors", "bytes": 5368717440, "completed": 7, "total": 8}
+{"asset": "model.safetensors-00004-of-00004.safetensors", "bytes": 3325995712, "completed": 8, "total": 8}
+{"status": "assets_ready", "snapshot": "/marimo/results/rq2/minimal_pairs_v3/model_cache/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a", "manifest_sha256": "28e2c8eb290647b2965af1e0a3c01f1518eb1e922ccbd1ae8740e6e68af40a28", "model_passes": 0}
+
+preparation/snapshot_manifest.json {
+  "model_id": "Qwen/Qwen3.5-9B",
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "snapshot": "/marimo/results/rq2/minimal_pairs_v3/model_cache/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "files": {
+    "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "config.json": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+    "model.safetensors-00001-of-00004.safetensors": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e",
+    "model.safetensors-00002-of-00004.safetensors": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330",
+    "model.safetensors-00003-of-00004.safetensors": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec",
+    "model.safetensors-00004-of-00004.safetensors": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6",
+    "model.safetensors.index.json": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+  },
+  "python": "/tmp/uv-venv/bin/python",
+  "model_passes": 0,
+  "weights_loaded": false
+}
+COMPLETE False
+

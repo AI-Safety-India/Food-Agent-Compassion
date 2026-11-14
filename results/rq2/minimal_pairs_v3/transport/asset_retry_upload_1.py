@@ -1,0 +1,10 @@
+from pathlib import Path
+import base64, gzip, hashlib, json
+data = gzip.decompress(base64.b64decode('H4sIAAAAAAACCqVVS2/cNhC+61cQe6EUrKTGuTnYQ10v0BZB1jAWCALDILjSaMVYIlk+bC+C/PcMqdduU6RAy4NEznz85sUhV6vVrTf80AGx/qCNqsBaAq/CEXgWNcgKCvKBe1m1KOWV605EoZC41ih/bPEPRCoHB6WeitVqlYheK+MIN0fNjYVp/cUqOc2VTRqjeqK5aztxIKP4DpcTZHFmlpzmqTO8ggOvnpLkfrfbk03cmtKy50b0qjRgfedsaf66KnshRc87prkwlj2/o1ny2+52+8OeWvVcSFv2ID3THZdSyGNpKyM0Ml2wIEWS1NCQsCPNrhOCIwZrkHYKvPjVHD2yubuoSbMzWMHrmvFRn1Lr+BHomlStEhjy5oFqA4iEKxRSeA3xOvo4MOA2i2ZGovgLVHY08EUdUBvTUhKKK0txEgBFNBNBDtfgEBfQZTAhXBEqRKNaNCOiQIV1dooxDMOFBXLvpRM9bI1RJqV/IgvvDPD6RBrMlG2hfo+ngtRed6LiDkgXjxAdfHTmtBCiscU7stmQJfgFFEal+p7LGr1+wLOArkHlXTi5mKP8JmQq9/i1zqSxwuXMxLi14LD6V4U+0exxpoXOwqURtCAasO4shwMJd0LJ0kqubascm3BnWZvGhAnpRWXRKV7bdN4Q0sQcFjXNsgc6genj/411PCbs4qjGeBH9oswTGLq+MHI2aJ5ju/V41EfWKXghtcfzPypjtF1kxA2xF/4ZHm3H1GQ/szlHv56ztj6X51PWRjPT8qekLXQ6xHqRHe5r4aBmg3JKS54r79Djv0UxplL8m/svLXJajZdRflBe1tycYmnyxgDkZuiRvFKyEaaH+qzGww2F5V3uuQLx6Vj3NQH5vPn65o3C2stnYZRE3rvP+993H293H/ef7v/Yb28+77chPHpN6Fv6LZvJsZOcD3fE1/FmuT7rMOQx4LyRlaqDZvCkWGQIGAgCL/qjO3BAQ5v+AA3d+ktsIkIbLjoM8Vv0Al4r0I7ccAvbOMVUXv83/95e+DNaQdn8BqB4nheNMj13DO2n2eDKi3DtdJspDTKlrzQj3JJmcSi2ae17nQ6W1qRZEyHx9XObqyWvTdF03rbpIsHyNPYkqxRV6JhU2NNROTStcCPhw3lMj+H5wHQyJnkPjMU7j7HwmDA23nnDy5J8B1mJWx6eBwAA'))
+p = Path('/marimo/domains/menu_planning/scripts/minimal_pairs/job_supervisor_v2.py')
+assert hashlib.sha256(data).hexdigest() == '1b9f48a7fea2474a13e5e0ae6bdc6b6ad82775207ece568d2fca8ca8defcc13b'
+if p.exists():
+    assert p.read_bytes() == data
+else:
+    with p.open('xb') as f: f.write(data)
+print(json.dumps({'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}))

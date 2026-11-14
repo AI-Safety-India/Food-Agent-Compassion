@@ -1,0 +1,3 @@
+Warning: connecting to non-local server 'sb-8e189fdea7da37de.sb.molab.run'. Ensure this is trusted.
+{"path": "/marimo/domains/menu_planning/scripts/minimal_pairs/job_supervisor_v2.py", "sha256": "1b9f48a7fea2474a13e5e0ae6bdc6b6ad82775207ece568d2fca8ca8defcc13b"}
+
