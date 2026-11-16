@@ -58,7 +58,7 @@ key = body[k0:k1].replace("<p><strong>Take-home message:", '<p class="take"><str
 body = body[:k0] + '<section class="keybox">' + key + "</section>" + body[k1:]
 html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Your AI Meal Planner Would Order You a Live Lobster: SF report (draft)</title>
+<title>Your AI Meal Planner Would Order You a Live Lobster: SF report</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
 <style>{CSS}</style></head><body><main>
